@@ -2,13 +2,13 @@
 
  Aesthetic Training Program
 
-	--- WBR Palette ---
-	Bright Blue:	#3b62b0	rgba(59,98,176,1)
-	Dark Blue:		#253a63	rgba(37,58,99,1)
-	Orange:			#f0942d	rgba(240,148,45,1)
-	Pale Orange:	#f7c996	rgba(247,201,150,1)
-	Storm Grey:		#8490a7	rgba(132,144,167,1)
-	Pale Grey:		#c8ced8	rgba(200,206,216,1)
+    --- WBR Palette ---
+    Bright Blue:    #3b62b0 rgba(59,98,176,1)
+    Dark Blue:      #253a63 rgba(37,58,99,1)
+    Orange:         #f0942d rgba(240,148,45,1)
+    Pale Orange:    #f7c996 rgba(247,201,150,1)
+    Storm Grey:     #8490a7 rgba(132,144,167,1)
+    Pale Grey:      #c8ced8 rgba(200,206,216,1)
 
 ***********************************************/
 
@@ -32,10 +32,10 @@ h2 { font:normal 24px 'latoregular'; color:#253a63; }
 h3 { font:normal 20px 'latoregular'; color:#253a63; }
 h4 { font:normal 16px 'latoregular'; color:#3b62b0; }
 
-.btn { transition: 100ms linear; color:#fff; }
+.btn { transition: 100ms linear; color:#fff; text-shadow: 0 0 1em rgba(50,30,0,0.7); }
 .btn-blue { background-color:#3b62b0; border-radius:0; }
 .btn-blue:hover { background-color:#f0942d; color:#fff; }
-.btn-orange { background-color:#f0942d; border-radius:0; padding:.8em 1em }
+.btn-orange { background-color:#f0942d; border-radius:0; padding:.8em 1em; }
 .btn-orange:hover { background-color:#3b62b0; color:#fff; }
 
 nav a { transition: 100ms linear; font-family:'latoregular'; letter-spacing:.05em; }
@@ -81,18 +81,18 @@ footer a.topbtn:hover { background:#3b62b0; color:#fff; text-decoration:none; }
 /* Headroom Navigation Hiding */
 
 .headroom { transition: transform 200ms linear; }
-.headroom--not-top { position:relative; } 				/* refresh fix */
+.headroom--not-top { position:relative; }               /* refresh fix */
 .headroom--pinned { position:fixed; top:0; transform: translateY(0%); } /* scrolling up unhide */
-.headroom--pinned .navbar-brand { margin-top:0; } 		/* logo top align */
-.headroom--unpinned { transform: translateY(-250%); } 	/* scrolling down hide */
-.headroom--top { position:relative; } 					/* lock into position at top */
-.headroom--top .navbar-brand  {margin-top:-.8em; } 		/* logo center align */
+.headroom--pinned .navbar-brand { margin-top:0; }       /* logo top align */
+.headroom--unpinned { transform: translateY(-250%); }   /* scrolling down hide */
+.headroom--top { position:relative; }                   /* lock into position at top */
+.headroom--top .navbar-brand  {margin-top:-.8em; }      /* logo center align */
 
 /* Footer Headroom Navigation Hiding */
 
 #mobilenav.headroom--pinned { position:fixed; bottom:0; top:auto; transform: translateY(0%); } /* scrolling up unhide */
-#mobilenav.headroom--unpinned { transform: translateY(250%); } 	/* scrolling down hide */
-#mobilenav.headroom--bottom { position:relative; } 	/* lock into position at bottom */
+#mobilenav.headroom--unpinned { transform: translateY(250%); }  /* scrolling down hide */
+#mobilenav.headroom--bottom { position:relative; }  /* lock into position at bottom */
 
 
 /***********************************************
@@ -106,13 +106,13 @@ footer a.topbtn:hover { background:#3b62b0; color:#fff; text-decoration:none; }
     .mainnav { height:auto; }
     .mainnav .navbar-nav { background:#3b62b0; }
     footer p { display:none; }
-	footer img { opacity:1; }
-	footer .container { padding:0; }
+    footer img { opacity:1; }
+    footer .container { padding:0; }
 }
 @media only screen and (max-width : 470px) {
-	header h1 { text-align:center; width:100%; }
-	.topnav .social { clear:both; float:none; margin:0 0 1em; overflow:hidden; text-align:center; padding-left:33%; }
+    header h1 { text-align:center; width:100%; }
+    .topnav .social { clear:both; float:none; margin:0 0 1em; overflow:hidden; text-align:center; padding-left:33%; }
 }
 @media only screen and (max-width : 320px) {
-	header h1 { font-size:16px; font-weight:bold; }
+    header h1 { font-size:16px; font-weight:bold; }
 }
