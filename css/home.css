@@ -54,16 +54,12 @@ article.main section .btn-blue { margin: 1em auto; width:80%; padding:1em; }
 	.homecontact .container { margin-top:0; }
 	img.colicon { margin:0 0 0 35%; }
 }
-/* iPads (portrait) -----------
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    img.colicon { margin:0; float:left; max-width:75px; }
-} */
-/* iPads (landscape) ----------- */
+/* iPads */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	.homecontact { background-position: right top; }
 }
 @media only screen and (max-width : 768px) {
-  article.main section { margin-bottom:3em; }
+  article.main section { margin-bottom:1em; }
   article.main section:last-child { margin-bottom:0; }
   .homequotes .media-body { max-width:70%; }  
 	.homecontact { background-position: 330px top; }
@@ -74,8 +70,8 @@ article.main section .btn-blue { margin: 1em auto; width:80%; padding:1em; }
     .homecontact .container { margin-top:0; }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
-    article.main h2 { text-align:left; text-indent:.5em; padding-top:1em;}
-    article.main p { clear:both; }
+    img.colicon { margin-top:-40px; }
+	article.main p { clear:both; }
 }
 @media only screen and (max-device-width : 600px) {
 	.hero {	overflow: scroll; -webkit-overflow-scrolling: touch; }
