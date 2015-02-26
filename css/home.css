@@ -54,10 +54,10 @@ article.main section .btn-blue { margin: 1em auto; width:80%; padding:1em; }
 	.homecontact .container { margin-top:0; }
 	img.colicon { margin:0 0 0 35%; }
 }
-/* iPads (portrait) ----------- */
+/* iPads (portrait) -----------
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     img.colicon { margin:0; float:left; max-width:75px; }
-}
+} */
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	.homecontact { background-position: right top; }
