@@ -25,7 +25,7 @@
 }
 
 html { background:#253a63; }
-body { background:#c8ced8; }
+body { background:#c8ced8; font-size:16px; }
 
 h1 { font:normal 30px 'latoregular'; }
 h2 { font:normal 24px 'latoregular'; color:#253a63; }
