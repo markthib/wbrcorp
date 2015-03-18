@@ -56,7 +56,7 @@ header h1 { font-size:1.5em; float:left; }
 .topnav .social a { display:block; float:left; padding:5px; margin:5px 5px 0; }
 .topnav a:hover { color:#f7c996; background:transparent; }
 
-.mainnav { background:#3b62b0; font-size:1.2em; height:3.2em; position:fixed; width:100%; z-index:9; }
+.mainnav { background:#3b62b0; font-size:1.2em; height:3.2em; position:relative; width:100%; z-index:9; }
 .mainnav .navbar-nav { margin:0 auto; float:none; width:33em; }
 .mainnav li { padding:0 .5em; }
 .mainnav li a { padding:1em; }
@@ -80,15 +80,15 @@ nav.footernav a:hover { color:#f7c996; background:transparent; }
 footer a.topbtn { border-radius:4px; background:#3b62b0; padding:5px; margin:8px; border:1px solid transparent; display:inline-block; }
 footer a.topbtn:hover { background:#3b62b0; color:#fff; text-decoration:none; }
 
-/* Headroom Navigation Hiding */
+/* Headroom Primary Navigation Hiding */
 
-.headroom { transition: transform 200ms linear; }
-.headroom--not-top { position:relative; }               /* refresh fix */
-.headroom--pinned { position:fixed; top:0; transform: translateY(0%); } /* scrolling up unhide */
-.headroom--pinned .navbar-brand { margin-top:0; }       /* logo top align */
-.headroom--unpinned { transform: translateY(-250%); }   /* scrolling down hide */
-.headroom--top { position:relative; }                   /* lock into position at top */
-.headroom--top .navbar-brand  {margin-top:-.8em; }      /* logo center align */
+//.headroom { transition: transform 200ms linear; }
+//.headroom--not-top { position:relative; }               /* refresh fix */
+//.headroom--pinned { position:fixed; top:0; transform: translateY(0%); } /* scrolling up unhide */
+//.headroom--pinned .navbar-brand { margin-top:0; }       /* logo top align */
+//.headroom--unpinned { transform: translateY(-250%); }   /* scrolling down hide */
+//.headroom--top { position:relative; }                   /* lock into position at top */
+//.headroom--top .navbar-brand  {margin-top:-.8em; }      /* logo center align */
 
 /* Footer Headroom Navigation Hiding */
 
