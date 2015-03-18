@@ -104,7 +104,6 @@ footer a.topbtn:hover { background:#3b62b0; color:#fff; text-decoration:none; }
 ***********************************************/
 /* Mobile: Phablet to Reasonable; */
 @media only screen and (max-width : 768px) {
-    body { padding-bottom:55px; }
     .mainnav { height:auto; }
     .mainnav .navbar-nav { background:#3b62b0; }
     footer p { display:none; }
