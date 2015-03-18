@@ -16,7 +16,7 @@
     }
 .hero h1 { color:#fff; margin:0; padding:1em 0 .5em 20%; font-size:2.4em; text-shadow: 0 0 0.5em rgba(0,0,0,1); background:rgba(0,0,0,0.4);}
 
-article.main { margin-top:300px; background:#c8ced8; position:relative; padding-bottom:2em;}
+article.main { margin-top:300px; }
 
 .history img { margin-top:-50px; }
 
