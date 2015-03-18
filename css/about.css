@@ -14,4 +14,4 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/about-mainphoto.jpg', sizingMethod='scale')";
 	background-attachment: initial;
     }
-.hero h1 { color:#fff; float:right; margin-top:2%; margin-right:2em; font-size:2.4em; }
+.hero h1 { color:#fff; margin-top:2%; margin-left:2em; font-size:2.4em; }
