@@ -19,7 +19,7 @@
 
     <link href="css/wbr.css" rel="stylesheet">
     <link href="css/events.css" rel="stylesheet">
-    <link href="css/filtrify.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
 
   </head>
   <body>
@@ -56,18 +56,43 @@
 		
         <article class="main">
 
-      		<section class="container" id="filters"></section> 
+            <table id="listings" class="display">
+              <thead>
+                  <tr>
+                      <th>Event Name</th>
+                      <th>Date</th>
+                      <th>Region</th>
+                      <th>Industry</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>eTail East</td>
+                      <td>August 10 - 13, 2015</td>
+                      <td>North America</td>
+                      <td>Retail, eCommerce</td>
+                  </tr>
+                  <tr>
+                      <td>eTail France</td>
+                      <td>November 4 - 6, 2015</td>
+                      <td>Europe</td>
+                      <td>Retail, eCommerce</td>
+                  </tr>
+                  <tr>
+                      <td>LogiPharma</td>
+                      <td>April 15 - 16, 2015</td>
+                      <td>Europe</td>
+                      <td>Procurement, Pharma</td>
+                  </tr>
+                  <tr>
+                      <td>ProcureCon Indirect</td>
+                      <td>April 21 - 23, 2015</td>
+                      <td>Europe</td>
+                      <td>Procurement</td>
+                  </tr>
 
-          <section class="container">
-            <ul id="listings">
-              <li data-industry="Retail, eCommerce" data-region="North America">eTail West</li>
-              <li data-industry="Retail, eCommerce" data-region="Europe">eTail Germany</li>
-              <li data-industry="Retail" data-region="North America">Luxury Interactive</li>
-              <li data-industry="Procurement, Pharma" data-region="North America">LogiPharma</li>
-              <li data-industry="Procurement" data-region="Europe">ProcureCon Indirect</li>
-            </ul>
-
-
+              </tbody>
+          </table>
 
           </section> 
 
@@ -112,16 +137,26 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/fitrify.js"></script>
+
+    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script>
+    
     <script src="//cdn.jsdelivr.net/headroomjs/0.5.0/headroom.min.js"></script>
-	<script src="//cdn.jsdelivr.net/headroomjs/0.5.0/jQuery.headroom.min.js"></script>
-	<script>$("#mobilenav").headroom();</script>
-  <script>
-    $(function() {
-
-        $.filtrify("listings", "filters");
-
-    });
-  </script>
+    <script src="//cdn.jsdelivr.net/headroomjs/0.5.0/jQuery.headroom.min.js"></script>
+    <script>$("#mobilenav").headroom();</script>
+    <script>
+      $(document).ready( function () {
+        $('#listings').dataTable( {
+        "columnDefs": [
+            {
+                "targets": [ 2 ],
+                "visible": false
+            },
+            {
+                "targets": [ 3 ],
+                "visible": false
+            }
+        ]
+      } );
+    </script>
   </body>
 </html>
