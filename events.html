@@ -61,29 +61,36 @@
     </div>
 
     <footer>
-	    <nav class="footernav">
-  		  <div class="container">
-          <p class="hidden-xs">Copyright 2015 Worldwide Business Research</p>
-          <a href="#" class="topbtn visible-xs-inline-block">Back to Top <i class="fa fa-chevron-up"></i></a>
+  
+      <nav class="footernav hidden-xs" id="desknav">
+        <div class="container">
+          <p>Copyright 2015 Worldwide Business Research</p>
           <a href="/wbrcorp/" title="Home | WBR"><img src="img/logow.png" alt="WBR"></a>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#footerlist" aria-expanded="false" aria-controls="footerlist">
-                <i class="fa fa-bars"></i> Menu
-                <span class="sr-only">Toggle navigation</span>
-              </button>
-        	<div aria-hidden="true" class="hidden-sm hidden-md hidden-lg"><ul class="nav navbar-collapse collapse" id="footerlist">
-            	<li><a href="/wbrcorp/events">Events</a></li>
-            	<li><a href="#">Services</a></li>
-            	<li><a href="/wbrcorp/about">About</a></li>
-            	<li><a href="/wbrcorp/contact">Contact</a></li>
-          	</ul></div>
-          <ul class="nav navbar-nav hidden-xs">
+          <ul class="nav navbar-nav">
               <li><a href="/wbrcorp/events">Events</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="/wbrcorp/about">About</a></li>
               <li><a href="/wbrcorp/contact">Contact</a></li>
             </ul>
           </div>
-	    </nav>
+      </nav>
+  
+      <nav class="footernav visible-xs" id="mobilenav">
+        <div class="container">
+          <a href="#" class="topbtn">Back to Top <i class="fa fa-chevron-up"></i></a>
+          <a href="/wbrcorp/" title="Home | WBR"><img src="img/logow.png" alt="WBR"></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#footerlist" aria-expanded="false" aria-controls="footerlist">
+                <i class="fa fa-bars"></i> Menu
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+          <div aria-hidden="true"><ul class="nav navbar-collapse collapse" id="footerlist">
+              <li><a href="/wbrcorp/events">Events</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="/wbrcorp/about">About</a></li>
+              <li><a href="/wbrcorp/contact">Contact</a></li>
+            </ul></div>
+          </div>
+      </nav>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
