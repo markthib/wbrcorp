@@ -6,6 +6,7 @@
 
 article.main { min-height:400px; }
 
-table#listings td:first-child { padding:1em; }
-table#listings td:first-child img { max-width: 140px; max-height:140px; }
-table#listings a strong { font-size:1.2em; }
+table#listings .logocol { padding:1em; }
+table#listings img.eventlogo { max-width: 140px; max-height:140px; }
+table#listings .infocol a strong { font-size:1.2em; }
+table#listings .agendadl { margin-right:10px; }
