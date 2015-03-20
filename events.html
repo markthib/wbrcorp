@@ -58,7 +58,10 @@
 
           <div class="container">
 	
-			<button class="btn btn-blue" id="filter-europe" type="submit">Europe</button>
+			<button class="btn btn-blue btn-filter" id="filter-reset" value="" type="submit">Reset</button>
+			<button class="btn btn-blue btn-filter" id="filter-europe" value="Europe" type="submit">Europe</button>
+			<button class="btn btn-blue btn-filter" id="filter-americas" value="Americas" type="submit">Americas</button>
+			<button class="btn btn-blue btn-filter" id="filter-asia" value="Asia" type="submit">Asia</button>
 			
             <table id="listings" class="display table-responsive table-hover">
               <thead>
@@ -339,8 +342,8 @@
           ]
         } );
 		var table = $('#listings').DataTable();
-		$('#filter-europe').click(function() {
-		table.columns(3).search('Europe').draw();
+		$('.btn-filter').click(function() {
+			table.columns(3).search(this.value).draw();
 		});
       } );
     </script>
