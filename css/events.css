@@ -41,8 +41,8 @@ table#listings img.eventlogo { max-width: 140px; max-height:140px; }
 
 table#listings .infocol { position:relative; padding-right:200px; }
 table#listings .eventname { font-size:1.2em; font-weight:bold;}
-table#listings .agendadl { margin-right:10px; display:block; position:absolute; right:0; bottom:34%; }
-
+table#listings .btn-agenda, table#listings .btn-spex { margin-right:10px; display:block; position:absolute; right:0; top:20%; }
+table#listings .btn-spex { bottom: 20%; }
 
 /***********************************************
 
