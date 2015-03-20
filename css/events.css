@@ -4,7 +4,7 @@
 
 ***********************************************/
 
-article.main { 
+.content { 
     padding:0 0 2em; margin:0; width:100%; height:100%; overflow:hidden;
     background: url("../img/events-mainphoto.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -16,14 +16,23 @@ article.main {
 	background-attachment: initial;
 	min-height:400px;
     }
-.hero h1 { margin:1em 2em; font-size:2.4em; }
+.hero h1 { margin:1em 2em; font-size:2.4em; color:#253a63; }
 
-#listings_wrapper { background:#253a63; padding:1em 0; }
+article.main { background:transparent; }
 
-#listings_filter label { color:#fff; padding-right:1em;}
-#listings_filter label input { color:#333; font-weight:normal; border-radius:0.5em; text-indent:5px; }
 
-table#listings tbody tr { background:rgba(255,255,255,0.8) }
+/**** Event Listings Table ****/
+
+#listings_wrapper { padding:1em 0; }
+
+#listings_filter label { padding-right:1em;}
+#listings_filter label input { color:#333; font-weight:normal; border-radius:0.4em; border:solid 2px #3b62b0; text-indent:5px; }
+
+table#listings tbody tr { background:rgba(255,255,255,0.9)!important; }
+table#listings tbody tr.even { background:rgba(245,245,245,0.9)!important; }
+table#listings tbody tr:hover { background:rgba(235,235,235,0.9)!important; }
+table#listings tbody td { background:transparent!important; }
+table#listings tbody td.logocol { background:#fff!important; }
 
 table#listings { position:relative; top:1em; }
 table#listings thead { color:#fff; background:#3b62b0; }
