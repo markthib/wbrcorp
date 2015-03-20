@@ -31,7 +31,7 @@ article.main { background:transparent; }
 table#listings tbody tr { background:rgba(255,255,255,0.9)!important; }
 table#listings tbody tr.even { background:rgba(245,245,245,0.9)!important; }
 table#listings tbody tr:hover { background:rgba(235,235,235,0.9)!important; }
-table#listings tbody td { background:transparent!important; }
+table#listings tbody td { background:transparent!important; min-height:5em; }
 table#listings tbody td.logocol { background:#fff!important; }
 
 table#listings { position:relative; top:1em; }
@@ -41,8 +41,8 @@ table#listings img.eventlogo { max-width: 140px; max-height:140px; }
 
 table#listings .infocol { position:relative; padding-right:200px; }
 table#listings .eventname { font-size:1.2em; font-weight:bold;}
-table#listings .btn-agenda, table#listings .btn-spex { margin-right:10px; display:block; position:absolute; right:0; top:20%; }
-table#listings .btn-spex { bottom: 20%; }
+table#listings .btn-agenda, table#listings .btn-spex { margin-right:10px; display:block; position:absolute; right:0; top:1em; }
+table#listings .btn-spex { top:4em; }
 
 /***********************************************
 
@@ -52,7 +52,7 @@ table#listings .btn-spex { bottom: 20%; }
 
 @media only screen and (max-width : 768px) {
     table#listings img.eventlogo { max-width: 100px; max-height:100px; }
-    table#listings td.datecol { font-size:0.9em; }
+    table#listings tbody td { font-size:0.9em; }
 }
 
 @media only screen and (max-width : 992px) {
