@@ -36,7 +36,7 @@ table#listings tbody td.logocol { background:#fff!important; }
 
 table#listings { position:relative; top:1em; }
 table#listings thead { color:#fff; background:#3b62b0; }
-table#listings td.logocol { padding:1em; }
+table#listings td.logocol { padding:1em; text-align:center; }
 table#listings img.eventlogo { max-width: 140px; max-height:140px; }
 
 table#listings .infocol { position:relative; padding-right:200px; }
