@@ -344,12 +344,12 @@
           ]
         } );
 		var table = $('#listings').DataTable();
-		$('.btn-filter').click(function() {
+		$('.btn-filter').not('.btn-reset').click(function() {
 			table.columns(3).search(this.value).draw();
 			$(this).addClass('btn-reset');
 		});
 		$('.btn-reset').click(function() {
-			table.draw();
+			table.columns(3).draw();
 			$('.btn-filter').removeClass('btn-reset');
 		});
       } );
