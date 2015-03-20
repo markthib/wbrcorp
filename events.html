@@ -62,7 +62,7 @@
 				<button class="btn btn-primary btn-filter" id="filter-europe" value="Europe" type="submit">Europe</button>
 				<button class="btn btn-primary btn-filter" id="filter-americas" value="Americas" type="submit">Americas</button>
 				<button class="btn btn-primary btn-filter" id="filter-asia" value="Asia" type="submit">Asia</button>
-				<button class="btn btn-primary btn-reset" id="filter-reset" value="" type="submit">Reset</button>
+				<button class="btn btn-primary btn-filter btn-reset" id="filter-reset" value="" type="submit">Reset</button>
 			</div>
 			
             <table id="listings" class="display table-responsive table-hover">
@@ -344,13 +344,8 @@
           ]
         } );
 		var table = $('#listings').DataTable();
-		$('.btn-filter').not('.btn-reset').click(function() {
+		$('.btn-filter').click(function() {
 			table.columns(3).search(this.value).draw();
-			$(this).addClass('btn-reset');
-		});
-		$('.btn-reset').click(function() {
-			table.draw();
-			$('.btn-filter').removeClass('btn-reset');
 		});
       } );
     </script>
