@@ -72,7 +72,7 @@
                   <tr>
                       <td><a href="http://etaileast.wbresearch.com" target="_blank"><img alt="eTail East" src="img/logos/etail.png" class="eventlogo"/></a></td>
                       <td><a href="http://etaileast.wbresearch.com" target="_blank"><strong>eTail East</strong></a>
-                        <a class="btn btn-blue agendadl pull-right" href="http://etaileast.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue agendadl" href="http://etaileast.wbresearch.com/agenda" target="_blank">Download Agenda</a>
                         <br>
                         Boston, MA
                       </td>
@@ -83,7 +83,7 @@
                   <tr>
                       <td><a href="http://etailfrance.wbresearch.com" target="_blank"><img alt="eTail France" src="img/logos/etail.png" class="eventlogo" /></a></td>
                       <td><a href="http://etailfrance.wbresearch.com" target="_blank"><strong>eTail France</strong></a>
-                        <a class="btn btn-blue agendadl pull-right" href="http://etailfrance.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue agendadl" href="http://etailfrance.wbresearch.com/agenda" target="_blank">Download Agenda</a>
                         <br>
                       </td>
                       <td>2015/11/04</td>
@@ -93,7 +93,7 @@
                   <tr>
                       <td><a href="http://logipharmaeu.wbresearch.com" target="_blank"><img alt="LogiPharma" src="img/logos/logipharma.png" class="eventlogo" /></a></td>
                       <td><a href="http://logipharmaeu.wbresearch.com" target="_blank"><strong>LogiPharma</strong></a>
-                        <a class="btn btn-blue agendadl pull-right" href="http://logipharmaeu.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue agendadl" href="http://logipharmaeu.wbresearch.com/agenda" target="_blank">Download Agenda</a>
                         <br>
                         Montreux Music &amp; Convention Centre, Montreux, Switzerland
                       </td>
@@ -104,7 +104,7 @@
                   <tr>
                       <td><a href="http://procureconindirecteu.wbresearch.com" target="_blank"><img alt="ProcureCon Indirect" src="img/logos/PConIndirectEurope.png" class="eventlogo" /></a></td>
                       <td><a href="http://procureconindirecteu.wbresearch.com" target="_blank"><strong>ProcureCon Indirect</strong></a>
-                        <a class="btn btn-blue agendadl pull-right" href="http://procureconindirecteu.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue agendadl" href="http://procureconindirecteu.wbresearch.com/agenda" target="_blank">Download Agenda</a>
                         <br>
                         NH Grand Hotel Krasnapolsky, Amsterdam
                       </td>
@@ -169,6 +169,8 @@
       $(document).ready( function () {
         $('#listings').dataTable( {
           "paging": false,
+          "info": false,
+          "autoWidth": false,
           "order": [[2, 'asc']],
           "columnDefs": [
               {   

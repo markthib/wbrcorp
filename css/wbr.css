@@ -34,9 +34,9 @@ h4 { font:normal 16px 'latoregular'; color:#3b62b0; }
 
 .btn { transition: 100ms linear; color:#fff; text-shadow: 0 0 1em rgba(50,30,0,0.7); }
 .btn-blue { background-color:#3b62b0; border-radius:0; }
-.btn-blue:hover { background-color:#f0942d; color:#fff; }
+.btn-blue:hover, .btn-blue:active { background-color:#f0942d; color:#fff; }
 .btn-orange { background-color:#f0942d; border-radius:0; padding:.8em 1em; }
-.btn-orange:hover { background-color:#3b62b0; color:#fff; }
+.btn-orange:hover, .btn-orange:active { background-color:#3b62b0; color:#fff; }
 
 nav a { transition: 100ms linear; font-family:'latoregular'; letter-spacing:.05em; }
 

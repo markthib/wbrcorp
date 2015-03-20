@@ -6,7 +6,9 @@
 
 article.main { min-height:400px; }
 
-table#listings .logocol { padding:1em; }
+table#listings td.logocol { padding:1em; }
 table#listings img.eventlogo { max-width: 140px; max-height:140px; }
+
+table#listings .infocol { position:relative; padding-right:200px; }
 table#listings .infocol a strong { font-size:1.2em; }
-table#listings .agendadl { margin-right:10px; }
+table#listings .agendadl { margin-right:10px; display:block; position:absolute; right:0; bottom:34%; }
