@@ -58,10 +58,12 @@
 
           <div class="container">
 	
-			<button class="btn btn-blue btn-filter" id="filter-reset" value="" type="submit">Reset</button>
-			<button class="btn btn-blue btn-filter" id="filter-europe" value="Europe" type="submit">Europe</button>
-			<button class="btn btn-blue btn-filter" id="filter-americas" value="Americas" type="submit">Americas</button>
-			<button class="btn btn-blue btn-filter" id="filter-asia" value="Asia" type="submit">Asia</button>
+			<div class="btn-group" role="group" aria-label="...">
+				<button class="btn btn-blue btn-filter btn-reset" id="filter-reset" value="" type="submit">Reset</button>
+				<button class="btn btn-blue btn-filter" id="filter-europe" value="Europe" type="submit">Europe</button>
+				<button class="btn btn-blue btn-filter" id="filter-americas" value="Americas" type="submit">Americas</button>
+				<button class="btn btn-blue btn-filter" id="filter-asia" value="Asia" type="submit">Asia</button>
+			</div>
 			
             <table id="listings" class="display table-responsive table-hover">
               <thead>
@@ -344,6 +346,10 @@
 		var table = $('#listings').DataTable();
 		$('.btn-filter').click(function() {
 			table.columns(3).search(this.value).draw();
+			$(this).toggleClass('btn-orange');
+		});
+		$('.btn-filter').click(function() {
+			$(this).removeClass('btn-orange');
 		});
       } );
     </script>
