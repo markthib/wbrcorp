@@ -12,3 +12,16 @@ table#listings img.eventlogo { max-width: 140px; max-height:140px; }
 table#listings .infocol { position:relative; padding-right:200px; }
 table#listings .infocol a strong { font-size:1.2em; }
 table#listings .agendadl { margin-right:10px; display:block; position:absolute; right:0; bottom:34%; }
+
+
+/***********************************************
+
+ Media: Y U SO QUERULOUS??
+
+***********************************************/
+
+@media only screen and (max-width : 768px) {
+    table#listings img.eventlogo { max-width: 100px; max-height:100px; }
+    table#listings td.infocol { font-size:0.9em; padding-right:150px; }
+    table#listings td.datecol { font-size:0.9em; }
+}
