@@ -4,12 +4,26 @@
 
 ***********************************************/
 
-article.main { min-height:400px; }
+article.main { 
+    padding:0 0 2em; margin:0; width:100%; height:100%; overflow:hidden;
+    background: url("../img/events-mainphoto.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/events-mainphoto.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/events-mainphoto.jpg', sizingMethod='scale')";
+	background-attachment: initial;
+	min-height:400px;
+    }
+.hero h1 { margin:1em 2em; font-size:2.4em; }
 
 #listings_wrapper { background:#253a63; padding:1em 0; }
 
 #listings_filter label { color:#fff; padding-right:1em;}
 #listings_filter label input { color:#333; font-weight:normal; border-radius:0.5em; text-indent:5px; }
+
+table#listings tbody tr { background:rgba(255,255,255,0.8) }
 
 table#listings { position:relative; top:1em; }
 table#listings thead { color:#fff; background:#3b62b0; }
