@@ -5,3 +5,5 @@
 ***********************************************/
 
 article.main { min-height:400px; }
+
+table#listings img { max-width: 160px; max-height:160px; }
