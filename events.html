@@ -57,7 +57,9 @@
         <article class="main">
 
           <div class="container">
-
+	
+			<button class="btn btn-blue" id="filter-europe" type="submit">Europe</button>
+			
             <table id="listings" class="display table-responsive table-hover">
               <thead>
                   <tr>
@@ -336,6 +338,13 @@
               }
           ]
         } );
+		var table = $('#listings').DataTable();
+		$( "#filter-europe" ).click(function() {
+		table
+		    .column('Region')
+		    .search('Europe')
+		    .draw();
+		});
       } );
     </script>
   </body>
