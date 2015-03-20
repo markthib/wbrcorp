@@ -346,14 +346,10 @@
 		var table = $('#listings').DataTable();
 		$('.btn-filter').click(function() {
 			table.columns(3).search(this.value).draw();
-			$(this).addClass('btn-warning');
-		});
-		$('.btn-filter.btn-warning').click(function() {
-			table.columns(3).search().draw();
-			$(this).removeClass('btn-warning');
+			$(this).addClass('btn-reset');
 		});
 		$('.btn-reset').click(function() {
-			$('.btn-filter').removeClass('btn-warning');
+			$('.btn-filter').removeClass('btn-reset');
 		});
       } );
     </script>
