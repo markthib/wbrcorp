@@ -339,11 +339,8 @@
           ]
         } );
 		var table = $('#listings').DataTable();
-		$( "#filter-europe" ).click(function() {
-		table
-		    .column('Region')
-		    .search('Europe')
-		    .draw();
+		$('#filter-europe').click(function() {
+		table.columns(3).search('Europe').draw();
 		});
       } );
     </script>
