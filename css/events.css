@@ -6,6 +6,13 @@
 
 article.main { min-height:400px; }
 
+#listings_wrapper { background:#253a63; padding:1em 0; }
+
+#listings_filter label { color:#fff; padding-right:1em;}
+#listings_filter label input { color:#333; font-weight:normal; border-radius:0.5em; text-indent:5px; }
+
+table#listings { position:relative; top:1em; }
+table#listings thead { color:#fff; background:#3b62b0; }
 table#listings td.logocol { padding:1em; }
 table#listings img.eventlogo { max-width: 140px; max-height:140px; }
 
@@ -22,7 +29,6 @@ table#listings .agendadl { margin-right:10px; display:block; position:absolute; 
 
 @media only screen and (max-width : 768px) {
     table#listings img.eventlogo { max-width: 100px; max-height:100px; }
-    table#listings td.infocol { font-size:0.9em; }
     table#listings td.datecol { font-size:0.9em; }
 }
 
