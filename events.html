@@ -58,13 +58,24 @@
 
           <div class="container">
 	
-			<div class="btn-group" role="group" aria-label="...">
+			<div class="btn-group regions" role="group" aria-label="...">
 				<button class="btn btn-primary btn-filter" id="filter-europe" value="Europe" type="submit">Europe</button>
 				<button class="btn btn-primary btn-filter" id="filter-americas" value="Americas" type="submit">Americas</button>
 				<button class="btn btn-primary btn-filter" id="filter-asia" value="Asia" type="submit">Asia</button>
-				<button class="btn btn-primary btn-filter btn-reset" id="filter-reset" value="" type="submit">Reset</button>
+			</div>
+
+			<div class="btn-group industries" role="group" aria-label="...">
+				<button class="btn btn-primary btn-filter" id="filter-retail" value="Retail" type="submit">Retail</button>
+				<button class="btn btn-primary btn-filter" id="filter-ecommerce" value="eCommerce" type="submit">eCommerce</button>
+				<button class="btn btn-primary btn-filter" id="filter-procurement" value="Procurement" type="submit">Procurement</button>
+				<button class="btn btn-primary btn-filter" id="filter-healthcare" value="Healthcare" type="submit">Healthcare</button>
+				<button class="btn btn-primary btn-filter" id="filter-pharma" value="Pharma" type="submit">Pharma</button>
+				<button class="btn btn-primary btn-filter" id="filter-servicesupport" value="Service and Support" type="submit">Service and Support</button>
+				<button class="btn btn-primary btn-filter" id="filter-logistics" value="Logistics" type="submit">Logistics</button>
 			</div>
 			
+			<button class="btn btn-primary btn-filter btn-reset" id="filter-reset" value="" type="submit">Reset</button>
+						
             <table id="listings" class="display table-responsive table-hover">
               <thead>
                   <tr>
@@ -345,7 +356,7 @@
         } );
 		var table = $('#listings').DataTable();
 		$('.btn-filter').click(function() {
-			table.columns(3).search(this.value).draw();
+			table.columns([3,4]).search(this.value).draw();
 		});
       } );
     </script>
