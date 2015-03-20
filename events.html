@@ -59,10 +59,10 @@
           <div class="container">
 	
 			<div class="btn-group" role="group" aria-label="...">
-				<button class="btn btn-primary btn-filter btn-reset" id="filter-reset" value="" type="submit">Reset</button>
 				<button class="btn btn-primary btn-filter" id="filter-europe" value="Europe" type="submit">Europe</button>
 				<button class="btn btn-primary btn-filter" id="filter-americas" value="Americas" type="submit">Americas</button>
 				<button class="btn btn-primary btn-filter" id="filter-asia" value="Asia" type="submit">Asia</button>
+				<button class="btn btn-primary btn-filter btn-reset" id="filter-reset" value="" type="submit">Reset</button>
 			</div>
 			
             <table id="listings" class="display table-responsive table-hover">
@@ -346,7 +346,11 @@
 		var table = $('#listings').DataTable();
 		$('.btn-filter').click(function() {
 			table.columns(3).search(this.value).draw();
-			$(this).toggleClass('btn-warning');
+			$(this).addClass('btn-warning');
+		});
+		$('.btn-filter.btn-warning').click(function() {
+			table.columns(3).search().draw();
+			$(this).removeClass('btn-warning');
 		});
 		$('.btn-reset').click(function() {
 			$('.btn-filter').removeClass('btn-warning');
