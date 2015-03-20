@@ -58,12 +58,12 @@
 
           <div class="container">
 
-            <table id="listings" class="display">
+            <table id="listings" class="display table-responsive table-hover">
               <thead>
                   <tr>
                       <th></th>
-                      <th>Event Name</th>
-                      <th>Date</th>
+                      <th>Event Name <span class="glyphicon glyphicon-sort"></span></th>
+                      <th>Date <span class="glyphicon glyphicon-sort"></span></th>
                       <th>Region</th>
                       <th>Industry</th>
                   </tr>
@@ -154,6 +154,7 @@
       $(document).ready( function () {
         $('#listings').dataTable( {
           "paging": false,
+          "order": [[2, 'asc']],
           "columnDefs": [
               {   
                   "targets": [ 0 ],
