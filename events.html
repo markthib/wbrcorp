@@ -356,7 +356,8 @@
         } );
 		var table = $('#listings').DataTable();
 		$('.btn-filter').click(function() {
-			table.columns(3, 4).search(this.value).draw();
+			table.columns(3).search(this.value).draw();
+      table.columns(4).search(this.value).draw();
 		});
       } );
     </script>

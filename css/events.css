@@ -13,7 +13,7 @@
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/events-mainphoto.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/events-mainphoto.jpg', sizingMethod='scale')";
-	background-attachment: initial;
+    background-attachment: initial;
     }
 .hero h1 { margin:1em 2em; font-size:2.4em; color:#253a63; }
 
@@ -50,8 +50,8 @@ table#listings .btn-spex { top:4em; }
 ***********************************************/
 
 @media only screen and (max-width : 768px) {
-    table#listings img.eventlogo { max-width: 100px; max-height:100px; }
-    table#listings tbody td { font-size:0.9em; height:4em; }
+    table#listings img.eventlogo { max-width: 90px; max-height:90px; }
+    table#listings tbody td { font-size:0.8em; height:4em; }
 }
 
 @media only screen and (max-width : 992px) {
