@@ -74,6 +74,7 @@
 					<button class="btn btn-primary btn-industry" id="filter-pharma" value="Pharma" type="submit">Pharma</button>
 					<button class="btn btn-primary btn-industry" id="filter-servicesupport" value="Service and Support" type="submit">Service and Support</button>
 					<button class="btn btn-primary btn-industry" id="filter-logistics" value="Logistics" type="submit">Logistics</button>
+					<button class="btn btn-primary btn-industry" id="filter-mobile" value="Mobile" type="submit">Mobile</button>
 				</div><br>
 
 				<button class="btn btn-primary btn-connect" id="filter-connect" value="true" type="submit">Connect Events: Intimate 1-to-1 Networking</button>
@@ -301,7 +302,7 @@
                       </td>
                       <td>2015/06/22</td>
                       <td>Americas</td>
-                      <td>Retail, eCommerce</td>
+                      <td>Mobile, eCommerce</td>
 					  <td>True</td>
                   </tr>
                   <tr>
@@ -379,26 +380,30 @@
           "autoWidth": false,
           "order": [[2, 'asc']],
           "columnDefs": [
-              {   
+              {   //logo
                   "targets": [ 0 ],
                   "className": "logocol",
                   "orderable": false,
                   "searchable": false 
               },
-              {   
+              {   //event name + info
                   "targets": [ 1 ],
                   "className": "infocol" 
               },
-              {   
+              {   //dates
                   "targets": [ 2 ],
                   "className": "datecol" 
               },
-              {
+              {	  //region
                   "targets": [ 3 ],
                   "visible": false
               },
-              {
+              {   //industries
                   "targets": [ 4 ],
+                  "visible": false
+              },
+              {   //connect
+                  "targets": [ 5 ],
                   "visible": false
               }
           ]
@@ -409,6 +414,9 @@
 		});
 		$('.btn-industry').click(function() {
 			table.columns(4).search(this.value).draw();
+		});
+		$('.btn-connect').click(function() {
+			table.search(this.value).draw();
 		});
 		$('.btn-reset').click(function() {
 			table.search(this.value).draw();
