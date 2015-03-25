@@ -18,7 +18,9 @@
 
 article.main { margin-top:300px; }
 
-.history img { margin-top:-50px; }
+article.main section:first-child img { margin-top:-50px; }
 
-.people { margin-top:2em; }
-.people img { margin-right:1em; }
+article.main section { margin-top:2em; }
+article.main section:first-child { margin-top:0; }
+
+img.pull-left { margin-right:1em; }
