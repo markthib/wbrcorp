@@ -68,6 +68,9 @@ header h1 { font-size:1.5em; float:left; }
 
 article.main { background:#c8ced8; position:relative; padding-bottom:2em;}
 
+.bg-alt { background:#e8e8ee; padding:1em auto; margin:2em auto; }
+img.pull-left { margin-right:1em; }
+
 footer p { float:left; padding:1em; }
 footer img { position:absolute; left:50%; height:42px; margin-top:5px; transition: 200ms linear; opacity:.7; }
 footer img:hover { opacity:1; }
