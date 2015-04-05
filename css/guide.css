@@ -5,10 +5,15 @@ article.main { background:#fff; }
 
 h2.container-fluid { background:#3b62b0; padding:1em; text-align:center; color:#fff; }
 
-.palette div { text-align:center; }
-.palette h3, .palette h4 { font-weight:bold; color:#222; }
+.palette { background:#222; padding-bottom:2em;}
+.palette div { text-align:center; color:#fff; }
+.palette h3, .palette h4 { font-weight:bold; color:#fff; }
+.palette .blues h3, .palette .blues p { color:#def; }
+.palette .oranges h3, .palette .oranges p { color:#fd6; }
 .palette .col-sm-4 p { border-bottom:solid .4em; padding-bottom:.4em; margin-bottom:1em;  }
+.palette .col-xs-6 { padding-bottom:2em; }
 .palette .col-xs-6 pre { width:90%; height:10em; margin:0 auto; border:0; }
+.palette .col-xs-6 { font-size:.8em; }
 .palette .bb pre { background:#3b62b0; }
 .palette .db pre { background:#253a63; }
 .palette .og pre { background:#f0942d; }
@@ -18,7 +23,10 @@ h2.container-fluid { background:#3b62b0; padding:1em; text-align:center; color:#
 
 .type .bg-alt { text-align:center; padding:.6em; }
 
+.links .row div { height:4em; padding-top:1em; padding-bottom:1em; }
+
+.grid .row div { text-align:center; border:solid 1px #fff; padding-top:.6em; padding-bottom:.6em; }
 .grid .col-md-1 { background:#c8ced8; }
-.grid .col-md-3 { background:#8490a7; }
-.grid .col-md-4 { background:#3b62b0; }
-.grid .col-md-6 { background:#253a63; }
+.grid .col-md-3 { background:#8490a7; color:#fff; }
+.grid .col-md-4 { background:#3b62b0; color:#fff; }
+.grid .col-md-6 { background:#253a63; color:#fff; }
