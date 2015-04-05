@@ -1,4 +1,14 @@
-.palette .col-xs-6 pre { width:90%; height:auto; margin:0 auto; }
+div.content { background:#253a63; }
+article.main { background:#fff; }
+
+.hero h1 { color:#fff; text-align:center; }
+
+h2.container-fluid { background:#3b62b0; padding:1em; text-align:center; color:#fff; }
+
+.palette div { text-align:center; }
+.palette h3, .palette h4 { font-weight:bold; color:#222; }
+.palette .col-sm-4 p { border-bottom:solid .4em; padding-bottom:.4em; margin-bottom:1em;  }
+.palette .col-xs-6 pre { width:90%; height:10em; margin:0 auto; border:0; }
 .palette .bb pre { background:#3b62b0; }
 .palette .db pre { background:#253a63; }
 .palette .og pre { background:#f0942d; }
