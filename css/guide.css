@@ -4,8 +4,8 @@ article.main { background:#fff; }
 .hero h1 { color:#fff; text-align:center; }
 
 h2.container-fluid { background:#3b62b0; padding:1em; text-align:center; color:#fff; }
-h2.container-fluid:first-child { margin-bottom:0; }
-h2.container-fluid:nth-child(3) { margin-top:0; }
+h2.head2 { margin-bottom:0; }
+h2.head3 { margin-top:0; }
 
 .palette { background:#222; padding-bottom:2em; margin-bottom:0;}
 .palette div { text-align:center; color:#fff; }
