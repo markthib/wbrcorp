@@ -30,8 +30,9 @@ body { background:#c8ced8; font-size:16px; }
 h1 { font:normal 30px 'latoregular'; }
 h2 { font:normal 24px 'latoregular'; color:#253a63; }
 h3 { font:normal 20px 'latoregular'; color:#253a63; }
-h4 { font:normal 16px 'latoregular'; color:#3b62b0; }
-
+h4 { font:normal 16px 'latoregular'; color:#8490a7; font-weight:bold; }
+h6 { color:#444; }
+ 
 a { color:#3b62b0; transition: 100ms linear; }
 a:hover { color:#253a63; }
 .btn { transition: 100ms linear; color:#fff; text-shadow: 0 0 1em rgba(50,30,0,0.7); }
