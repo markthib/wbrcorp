@@ -23,7 +23,8 @@ h2.container-fluid:nth-child(3) { margin-top:0; }
 .palette .sg pre { background:#8490a7; }
 .palette .pg pre { background:#c8ced8; }
 
-.logo img { margin:1em auto 2em; display:block; max-height:10em; }
+.logo img { margin:1em auto 2em; display:block; max-height:10em; max-width:100%; }
+.logo h6 { margin-bottom:4em; }
 
 .type .bg-alt { text-align:center; padding:.6em; }
 
