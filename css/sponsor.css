@@ -28,4 +28,7 @@ img.pull-left { margin-right:1em; }
 .how .col-sm-4 { padding:1em; border-radius:1em; }
 .how .col-sm-4:hover { background:#f0f0f8; transition: 200ms linear; }
 .how .headicon { text-align:center; }
-.how .fa { color:#253a63; border:solid 6px #253a63; border-radius:100%; padding:.3em;  }
+.how .fa { color:#253a63; border:solid 4px #253a63; border-radius:100%; padding:.3em; }
+.how .fa-paper-plane { padding:.35em .35em .25em .25em; }
+
+.digital .fa { color:#8490a7; padding:.3em; }
