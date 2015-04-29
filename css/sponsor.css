@@ -34,3 +34,13 @@ img.pull-left { margin-right:1em; }
 .how .fa-paper-plane { padding:.35em .35em .25em .25em; }
 
 .digital .fa { color:#8490a7; font-size:7em;}
+
+
+/***********************************************
+
+ Media: Y U SO QUERULOUS??
+
+***********************************************/
+@media only screen and (max-width : 1024px) {
+    article.main section:first-child img { max-width:200px; }
+}
