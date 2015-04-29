@@ -86,16 +86,11 @@ nav.footernav a:hover { color:#f7c996; background:transparent; }
 #desknav ul { float:right; overflow:hidden; }
 #desknav li a { padding:1em .5em; }
 
+#mobilenav { position:fixed; bottom:-1px; top:auto; }
 #mobilenav ul { margin:0 auto; overflow:hidden; padding:.3em; }
 #mobilenav li { text-align:center; width:18%; padding:0 1%; }
 #mobilenav .navbar-brand { padding:0; float:none; }
 #mobilenav img { margin:5px auto 0; }
-
-/* Footer Headroom Navigation Hiding */
-
-.headroom--pinned { position:fixed; bottom:0; top:auto; display: block; } /* scrolling up unhide */
-.headroom--unpinned { display: none; }  /* scrolling down hide */
-.headroom--bottom { position:relative; }  /* lock into position at bottom */
 
 
 /***********************************************
