@@ -75,18 +75,20 @@ article.main { background:#c8ced8; position:relative; padding-bottom:2em;}
 img.pull-left { margin-right:1em; }
 
 footer p { float:left; padding:1em; }
-footer img { position:absolute; left:50%; height:42px; margin-top:5px; transition: 200ms linear; opacity:.7; }
+footer img { height:42px; margin-top:5px; transition: 200ms linear; opacity:.7; }
 footer img:hover { opacity:1; }
 .footernav { min-height:53px; width:100%; background:#253a63; color:#fff; }
-.footernav ul { float:right; }
 nav.footernav a { padding:1em; }
 nav.footernav a:hover { color:#f7c996; background:transparent; }
-.footernav button { background:#f0942d; padding:5px; margin:8px; }
-#footerlist { background:#3b62b0; clear:both; width:100%; text-align:center; margin: 1em 0 0; padding:0; }
-#footerlist a:hover { background:#c8ced8; color:#253a63; }
-footer a.topbtn { border-radius:4px; background:#3b62b0; padding:5px; margin:8px; border:1px solid transparent; display:inline-block; }
-footer a.topbtn:hover { background:#3b62b0; color:#fff; text-decoration:none; }
 
+#desknav img { position:absolute; left:50%;  }
+#desknav ul { float:right; }
+#desknav li a { padding:1em .5em; }
+
+#mobilenav ul { margin:0 auto; overflow:hidden; padding:.3em; }
+#mobilenav li { text-align:center; width:18%; padding:0 1%; }
+#mobilenav .navbar-brand { padding:0; float:none; }
+#mobilenav img { margin:5px auto 0; }
 
 /* Footer Headroom Navigation Hiding */
 
@@ -108,9 +110,10 @@ footer a.topbtn:hover { background:#3b62b0; color:#fff; text-decoration:none; }
     footer img { opacity:1; }
     footer .container { padding:0; }
 }
-@media only screen and (max-width : 470px) {
+@media only screen and (max-width : 500px) {
     header h1 { text-align:center; width:100%; }
     .topnav .social { clear:both; float:none; margin:0 0 1em; overflow:hidden; text-align:center; padding-left:33%; }
+    #mobilenav li { font-size:.85em; }
 }
 @media only screen and (max-width : 320px) {
     header h1 { font-size:16px; font-weight:bold; }
