@@ -81,8 +81,9 @@ footer img:hover { opacity:1; }
 nav.footernav a { padding:1em; }
 nav.footernav a:hover { color:#f7c996; background:transparent; }
 
-#desknav img { position:absolute; left:50%;  }
-#desknav ul { float:right; }
+#desknav { position:relative; }
+#desknav .footerimg { position:absolute; left:50%; display:block; top:0; padding:0; 1em;}
+#desknav ul { float:right; overflow:hidden; }
 #desknav li a { padding:1em .5em; }
 
 #mobilenav ul { margin:0 auto; overflow:hidden; padding:.3em; }
