@@ -41,28 +41,32 @@ article.main section .btn-blue { margin: 1em auto; width:80%; padding:1em; }
  Media: Y U SO QUERULOUS??
 
 ***********************************************/
-/* Big and Beautiful */
-@media only screen and (min-width : 1280px) {
-	.homequotes .media img { max-width:160px; }
-	.homecontact .container { width:60%; margin-top:2.5em; }
-	.homecontact .container br { display:none; }
+/* iPad and below */
+@media only screen and (max-height : 640px) {
+	.hero { background-position: 80% top; }
 }
-/* Smallish Screens and iPads */
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media only screen and (max-device-width : 320px) {
+	.hero h1 { font-size:24px; line-height:1.5em; padding-left:.5em; margin-top:1em; }
+	.hero { background-position: right top; }
+	article.main section:last-child { margin-bottom:1em; }
+	article.main section h2 { margin: .5em auto; }
 	article.main section .btn-blue { width:100%; }
-	.homecontact { background-position: 420px top; }
-	.homecontact .container { margin-top:0; }
-	img.colicon { margin:0 0 0 35%; }
 }
-/* iPads */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-	.homecontact { background-position: right top; }
+@media only screen and (max-width : 470px) {
+	.homequotes .media-body { max-width:95%; }
+	.media-left { display:none; }
+}
+@media only screen and (max-device-width : 470px) {
+	.hero {	overflow: scroll; -webkit-overflow-scrolling: touch; }
+    .hero h1 { font-size:2em; }
+    article.main section { border-bottom:solid 1px #aaa; padding-bottom:1em; }
 }
 @media only screen and (max-width : 768px) {
-  article.main section { margin-bottom:1em; }
+  article.main section { margin-bottom:3em; }
   article.main section:last-child { margin-bottom:0; }
   .homequotes .media-body { max-width:70%; }  
 	.homecontact { background-position: 330px top; }
+	.homecontact p { margin-bottom:.5em; }
 }
 @media only screen and (max-device-width : 768px) {
 	.hero h1 { padding:0 1em; margin-top:1em; float:left; font-size:2.2em; }
@@ -83,23 +87,20 @@ article.main section .btn-blue { margin: 1em auto; width:80%; padding:1em; }
 	.homecontact .container { width:100%; }
 	.homecontact .container p { margin-bottom: .5em; }
 }
-@media only screen and (max-width : 470px) {
-	.homequotes .media-body { max-width:95%; }
-	.media-left { display:none; }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.homecontact { background-position: right top; }
 }
-@media only screen and (max-device-width : 470px) {
-	.hero {	overflow: scroll; -webkit-overflow-scrolling: touch; }
-    .hero h1 { font-size:2em; }
-    article.main section { border-bottom:solid 1px #aaa; padding-bottom:1em; }
-}
-@media only screen and (max-device-width : 320px) {
-	.hero h1 { font-size:24px; line-height:1.5em; padding-left:.5em; margin-top:1em; }
-	.hero { background-position: right top; }
-	article.main section { margin-bottom:3em; }
-	article.main section:last-child { margin-bottom:1em; }
-	article.main section h2 { margin: .5em auto; }
+/* Smallish Screens and iPads */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
 	article.main section .btn-blue { width:100%; }
+	.homecontact { background-position: 420px top; }
+	.homecontact .container { margin-top:0; }
+	img.colicon { margin:0 0 0 35%; }
 }
-@media only screen and (max-height : 640px) {
-	.hero { background-position: 80% top; }
+/* Big and Beautiful */
+@media only screen and (min-width : 1280px) {
+	.homequotes .media img { max-width:160px; }
+	.homecontact .container { width:60%; margin-top:2.5em; }
+	.homecontact .container br { display:none; }
 }
+

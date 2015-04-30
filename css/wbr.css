@@ -74,19 +74,17 @@ article.main { background:#c8ced8; position:relative; padding-bottom:2em;}
 .bg-alt { background:#e8e8ee; padding:1em auto; margin:2em auto; }
 img.pull-left { margin-right:1em; }
 
-footer p { float:left; padding:1em; }
+footer p { padding:1em; font-size:.9em; }
 footer img { height:42px; margin-top:5px; transition: 200ms linear; opacity:.7; }
 footer img:hover { opacity:1; }
-.footernav { min-height:53px; width:100%; background:#253a63; color:#fff; }
-nav.footernav a { padding:1em; }
-nav.footernav a:hover { color:#f7c996; background:transparent; }
+nav.footernav { height:65px; background:#253a63; color:#fff; }
+nav.footernav li a { padding:1em; }
+nav.footernav li a:hover { color:#f7c996; background:transparent; }
 
 #desknav { position:relative; }
 #desknav .footerimg { position:absolute; left:50%; display:block; top:0; padding:0; 1em;}
-#desknav ul { float:right; overflow:hidden; }
 #desknav li a { padding:1em .5em; }
 
-#mobilenav { position:fixed; bottom:-1px; top:auto; }
 #mobilenav ul { margin:0 auto; overflow:hidden; padding:.3em; }
 #mobilenav li { text-align:center; width:18%; padding:0 1%; }
 #mobilenav .navbar-brand { padding:0; float:none; }
@@ -100,6 +98,7 @@ nav.footernav a:hover { color:#f7c996; background:transparent; }
 ***********************************************/
 /* Mobile: Phablet to Reasonable; */
 @media only screen and (max-width : 768px) {
+    body { padding-bottom:65px }
     .mainnav { height:auto; }
     .mainnav .navbar-nav { background:#3b62b0; }
     footer p { display:none; }
