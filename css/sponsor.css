@@ -32,7 +32,9 @@ img.pull-left { margin-right:1em; }
 .how .headicon { text-align:center; }
 .how .fa { color:#8490a7; border:solid 4px #8490a7; border-radius:100%; padding:.3em; }
 .how .fa-paper-plane { padding:.35em .35em .25em .25em; }
+article.main .how img.pull-right { margin-top:1em; margin-bottom:-3em; }
 
+.digital { padding-top:1em; }
 .digital .fa { color:#8490a7; font-size:7em;}
 
 
@@ -41,6 +43,9 @@ img.pull-left { margin-right:1em; }
  Media: Y U SO QUERULOUS??
 
 ***********************************************/
+@media only screen and (max-width : 768px) {
+    .digital .fa { display:block; float:none!important; text-align:center; }
+}
 @media only screen and (max-width : 1024px) {
     article.main section:first-child img { max-width:200px; }
 }
