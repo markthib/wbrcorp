@@ -22,13 +22,41 @@ article.main { background:transparent; min-height:600px; }
 
 /**** Event Filters ****/
 
+
+.filters { background: rgba(255,255,255,0.8); padding-bottom:1em; }
 .filters button {display:block; background:none; border:none; color:#3b62b0; transition: 100ms linear;}
 
-.industries { background: rgba(255,255,255,0.8); padding-bottom:1em; }
 .extras { clear:both; }
 
-.regions button { height:6em; background:#ddd; }
-.regions button:hover { background:#ccc; }
+.regions .row {
+    background: #fff url("../img/events-regions-bg.jpg") no-repeat 20% bottom;
+    padding:0;
+    margin:0;
+    }
+.regions button { 
+    height:267px; 
+    padding:0;
+    }
+.regions #filter-americas:hover { 
+    background-color: rgba(255,200,150,0.2);
+    background:
+        url("../img/events-region-hover.png") no-repeat 60px 50px,
+        url("../img/events-region-hover.png") no-repeat 105px 75px / 33%;
+    }
+.regions #filter-europe:hover { 
+    background:
+        url("../img/events-region-hover.png") no-repeat 20px 35px,
+        url("../img/events-region-hover.png") no-repeat 35px 50px / 33%;
+    }
+.regions #filter-asia:hover { 
+    background-color: rgba(255,200,150,0.2);
+    background:
+        url("../img/events-region-hover.png") no-repeat 10px 85px,
+        url("../img/events-region-hover.png") no-repeat 15px 115px / 33%;
+    }
+.regions button:focus { background-color: rgba(150,200,255,0.2); }
+
+
 
 .industries button { text-align:left; margin-bottom:.1em; white-space:nowrap; }
 .industries button:hover { color:#f0942d; }
