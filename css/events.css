@@ -20,8 +20,29 @@
 article.main { background:transparent; min-height:600px; }
 
 
+/**** Event Filters ****/
+
+.filters button {display:block; background:none; border:none; color:#3b62b0; transition: 100ms linear;}
+
+.regions { width:48%; float:left; }
+.industries { width:48%; float:right; }
+.extras { clear:both; }
+
+.regions button { height:6em; background:#ddd; }
+.regions button:hover { background:#ccc; }
+
+.industries button { text-align:left; margin-bottom:.1em; white-space:nowrap; }
+.industries button:hover { color:#f0942d; }
+.industries button i { width:1em; }
+
+.extras button { display:block; clear:both; background-color:#3b62b0; color:#fff; padding:.5em 1em; margin:1em; white-space:nowrap; }
+.extras .btn-reset { background:#253a63; }
+.extras button:hover { background:#f0942d; }
+
+
 /**** Event Listings Table ****/
 
+section.table-responsive { clear:both; }
 #listings_wrapper { padding:1em 0; }
 
 #listings_filter label { padding-right:1em;}
@@ -39,7 +60,7 @@ table#listings td.logocol { padding:1em; text-align:center; }
 table#listings img.eventlogo { max-width: 140px; max-height:140px; }
 
 table#listings .infocol { position:relative; padding-right:200px; }
-table#listings .eventname { font-size:1.2em; font-weight:bold;}
+table#listings .eventname { font-size:1.2em; font-weight:bold; font-family:'latoregular'; }
 table#listings .btn-agenda, table#listings .btn-spex { margin-right:10px; display:block; position:absolute; right:0; top:1em; }
 table#listings .btn-spex { top:4em; }
 
@@ -54,5 +75,6 @@ table#listings .btn-spex { top:4em; }
 }
 
 @media only screen and (max-width : 992px) {
+    .filters button { font-size:.8em; }
     table#listings td.infocol { padding-right:100px; }
 }
