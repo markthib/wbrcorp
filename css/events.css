@@ -24,8 +24,7 @@ article.main { background:transparent; min-height:600px; }
 
 .filters button {display:block; background:none; border:none; color:#3b62b0; transition: 100ms linear;}
 
-.regions { width:48%; float:left; }
-.industries { width:48%; float:right; }
+.industries { background: rgba(255,255,255,0.8); padding-bottom:1em; }
 .extras { clear:both; }
 
 .regions button { height:6em; background:#ddd; }
