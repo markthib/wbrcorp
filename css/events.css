@@ -37,8 +37,7 @@ article.main { background:transparent; min-height:600px; }
 .regions button:hover, .industries button:hover,
 .regions button:focus, .industries button:focus { color:#f0942d; }
 
-.extras button { display:block; clear:both; background-color:#3b62b0; color:#fff; padding:.5em 1em; margin:1em; white-space:nowrap; }
-.extras .btn-reset { background:#253a63; }
+.extras button { display:block; clear:both; background-color:#253a63; color:#fff; padding:.5em 1em; margin:1em auto; }
 .extras button:hover { background:#f0942d; }
 
 
@@ -56,7 +55,7 @@ table#listings tbody tr:hover { background:rgba(235,235,235,0.9)!important; }
 table#listings tbody td { background:transparent!important; height:4em; }
 table#listings tbody td.logocol { background:#fff!important; }
 
-table#listings thead { color:#fff; background:#3b62b0; }
+table#listings thead { color:#fff; background:#3b62b0; white-space:nowrap;  }
 table#listings td.logocol { padding:1em; text-align:center; }
 table#listings img.eventlogo { max-width: 140px; max-height:140px; }
 
@@ -64,6 +63,7 @@ table#listings .infocol { position:relative; padding-right:200px; }
 table#listings .eventname { font-size:1.2em; font-weight:bold; font-family:'latoregular'; }
 table#listings .btn-agenda, table#listings .btn-spex { margin-right:10px; display:block; position:absolute; right:0; top:1em; }
 table#listings .btn-spex { top:4em; }
+
 
 /***********************************************
 
@@ -76,7 +76,14 @@ table#listings .btn-spex { top:4em; }
     table#listings td.infocol { padding-right:100px; }
 }
 @media only screen and (max-width : 768px) {
-    .filters button { font-size:inherit; margin-top:.7em; }
+    .filters button { font-size:inherit; margin-top:.8em; }
     .regions, .industries { border:0; text-align:center; }
+    .industries button { padding-left:20%; width:80%; white-space:normal; }
     table#listings img.eventlogo { max-width: 90px; max-height:90px; }
+    table#listings .eventname { font-size:1em; }
+    table#listings .venue { font-size:.8em; }   
+}
+@media only screen and (max-width : 640px) {
+    #listings_filter label { width:100%; }
+    #listings_filter label input { width:60%; }
 }

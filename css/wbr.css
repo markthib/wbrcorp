@@ -77,7 +77,6 @@ footer p { padding:1em; font-size:.9em; }
 footer img { height:42px; margin-top:5px; transition: 200ms linear; opacity:.7; }
 footer img:hover { opacity:1; }
 nav.footernav { height:65px; background:#253a63; color:#fff; }
-nav.footernav li a { padding:1em; }
 nav.footernav li a:hover { color:#f7c996; background:transparent; }
 
 #desknav { position:relative; }
@@ -86,6 +85,7 @@ nav.footernav li a:hover { color:#f7c996; background:transparent; }
 
 #mobilenav ul { margin:0 auto; overflow:hidden; padding:.3em; }
 #mobilenav li { text-align:center; width:18%; padding:0 1%; }
+#mobilenav li a { padding:1em 0; }
 #mobilenav .navbar-brand { padding:0; float:none; }
 #mobilenav img { margin:5px auto 0; }
 
