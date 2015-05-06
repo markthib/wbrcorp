@@ -28,39 +28,14 @@ article.main { background:transparent; min-height:600px; }
 
 .extras { clear:both; }
 
-.regions .row {
-    background: #fff url("../img/events-regions-bg.jpg") no-repeat 20% bottom;
-    padding:0;
-    margin:0;
-    }
-.regions button { 
-    height:267px; 
-    padding:0;
-    }
-.regions #filter-americas:hover { 
-    background-color: rgba(255,200,150,0.2);
-    background:
-        url("../img/events-region-hover.png") no-repeat 60px 50px,
-        url("../img/events-region-hover.png") no-repeat 105px 75px / 33%;
-    }
-.regions #filter-europe:hover { 
-    background:
-        url("../img/events-region-hover.png") no-repeat 20px 35px,
-        url("../img/events-region-hover.png") no-repeat 35px 50px / 33%;
-    }
-.regions #filter-asia:hover { 
-    background-color: rgba(255,200,150,0.2);
-    background:
-        url("../img/events-region-hover.png") no-repeat 10px 85px,
-        url("../img/events-region-hover.png") no-repeat 15px 115px / 33%;
-    }
-.regions button:focus { background-color: rgba(150,200,255,0.2); }
-
-
+.regions { border-right:solid 1px #ddd; }
+.regions button i.mg { display:block; font-size:5em; }
 
 .industries button { text-align:left; margin-bottom:.1em; white-space:nowrap; }
-.industries button:hover { color:#f0942d; }
 .industries button i { width:1em; text-align:center; }
+
+.regions button:hover, .industries button:hover,
+.regions button:focus, .industries button:focus { color:#f0942d; }
 
 .extras button { display:block; clear:both; background-color:#3b62b0; color:#fff; padding:.5em 1em; margin:1em; white-space:nowrap; }
 .extras .btn-reset { background:#253a63; }
@@ -69,7 +44,7 @@ article.main { background:transparent; min-height:600px; }
 
 /**** Event Listings Table ****/
 
-section.table-responsive { clear:both; }
+section.table-responsive { clear:both; border:0; }
 #listings_wrapper { padding:1em 0; }
 
 #listings_filter { background-color: #3b62b0; padding:.7em .5em 0; color:#fff; border-top-left-radius: .5em; border-top-right-radius: .5em;}
@@ -96,11 +71,12 @@ table#listings .btn-spex { top:4em; }
 
 ***********************************************/
 
-@media only screen and (max-width : 768px) {
-    table#listings img.eventlogo { max-width: 90px; max-height:90px; }
-}
-
 @media only screen and (max-width : 992px) {
     .filters button { font-size:.8em; }
     table#listings td.infocol { padding-right:100px; }
+}
+@media only screen and (max-width : 768px) {
+    .filters button { font-size:inherit; margin-top:.7em; }
+    .regions, .industries { border:0; text-align:center; }
+    table#listings img.eventlogo { max-width: 90px; max-height:90px; }
 }
