@@ -20,7 +20,7 @@ article.main { margin-top:250px; }
 
 form .info { padding:0.5em 0.3em; background:#3b62b0; color:#fff; }
 
-.eqtype label { font-weight:normal; padding-top:0.4em; }
+.eqtype label { font-weight:normal; padding-top:0.4em; font-size:0.9em; }
 
 /***********************************************
 
@@ -34,6 +34,12 @@ form .info { padding:0.5em 0.3em; background:#3b62b0; color:#fff; }
     .eqtype select { font-size:1em; }
     form div.submit { padding:0; }
 }
+@media only screen and (max-width : 1024px) {
+    .hero { background-position:center -250px;  }
+}
 @media only screen and (min-width : 992px) and (max-width : 1200px) {
     .eqtype label { font-size:0.8em; padding-top:0.6em; }
+}
+@media only screen and (min-width : 1440px) {
+    .hero { background-position:center -450px;  }
 }
