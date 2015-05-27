@@ -114,7 +114,16 @@ nav.footernav li a:hover { color:#f7c996; background:transparent; }
 }
 
 @media print {
-    nav, img { display:none; }
-    .btn { background:none; color:#3b62b0; display:inline; padding:0; }
+    body { 
+		width:100% !important; padding:0 !important; 
+		color: #000 !important; background: #fff !important; 
+		line-height: 1.4; word-spacing:1.1pt; letter-spacing:0.2pt; 
+		}
+    nav, img { display:none !important; }
+    a[href^="#"]:after { content: ""; }
+    a.btn { background:none !important; display:inline !important; padding:0 !important; }
+    article a { font-weight: bolder; text-decoration: none; }
     section { padding:1em 0; border-bottom:solid 1px #666; }
+    h2, h3, h4 { page-break-after: avoid; }
+    ul, img { page-break-inside: avoid; }
 }
