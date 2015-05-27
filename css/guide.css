@@ -10,6 +10,7 @@ h2.head3 { margin-top:0; }
 .palette { background:#222; padding-bottom:2em; margin-bottom:0;}
 .palette div { text-align:center; color:#fff; }
 .palette h3, .palette h4 { font-weight:bold; color:#fff; }
+.palette p { font-size:0.9em; }
 .palette .blues h3, .palette .blues p { color:#def; }
 .palette .oranges h3, .palette .oranges p { color:#fd6; }
 .palette .col-sm-4 p { border-bottom:solid .4em; padding-bottom:.4em; margin-bottom:1em;  }
