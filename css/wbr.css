@@ -115,11 +115,11 @@ nav.footernav li a:hover { color:#f7c996; background:transparent; }
 
 @media print {
     body { width:100% !important; padding:0 !important; color: #000 !important; background: #fff !important; line-height: 1.4; word-spacing:1.1pt; letter-spacing:0.2pt; }
-	h1 { position:static !important; text-align:center !important; width:100% !important; margin:1em 0 !important; padding:0 !important; }
+	h1 { font-size:28pt !important; position:static !important; text-align:center !important; width:100% !important; margin:1em 0 !important; padding:0 !important; }
     nav, img, .btnrow { display:none !important; }
     .hero, .homeabout { height:auto !important; position:static !important; }
-    article.main { margin-top:0 !important; position:static !important;  }
-    .container-fluid .container { width:90%; margin:0 auto !important; position:static !important; }
+    article.main { margin-top:0 !important; position:static !important; font-size:14pt;  }
+    .container-fluid .container { width:90% !important; margin:0 auto !important; position:static !important; }
     a:after { content: "" !important; }
     a { font-weight: bolder !important; text-decoration: none; border-bottom:dotted 2pt black !important; }
     a.btn { background:none !important; display:inline !important; padding:0 !important; }
@@ -128,5 +128,6 @@ nav.footernav li a:hover { color:#f7c996; background:transparent; }
     ul, img { page-break-inside: avoid; }
     blockquote { border:none; border-left:solid 4pt black !important; }
     cite { font-size:0.8em; padding-left:2em; }
+    .media .pull-right { float:none!important; }
     .col-sm-4 { width:100%; }
 }
