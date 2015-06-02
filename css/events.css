@@ -22,8 +22,7 @@ article.main { background:transparent; min-height:600px; }
 
 /**** Event Filters ****/
 
-
-.filters { background: rgba(255,255,255,0.8); padding-bottom:1em; }
+.filters { background: rgba(255,255,255,0.9); padding-bottom:1em; }
 .filters button {display:block; background:none; border:none; color:#3b62b0; transition: 100ms linear;}
 
 .extras { clear:both; }
@@ -37,8 +36,9 @@ article.main { background:transparent; min-height:600px; }
 .regions button:hover, .industries button:hover,
 .regions button:focus, .industries button:focus { color:#f0942d; }
 
-.extras button { display:block; clear:both; background-color:#253a63; color:#fff; padding:.5em 1em; margin:1em auto; }
-.extras button:hover { background:#f0942d; }
+.btn-reset { display:block; clear:both; background-color:#253a63; color:#fff; padding:.5em 1em; margin:1em auto; border:0; }
+.btn-reset:hover { background:#f0942d; }
+
 
 
 /**** Event Listings Table ****/
