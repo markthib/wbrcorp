@@ -6,28 +6,28 @@
 
 .content { 
     padding:0 0 2em; margin:0; width:100%; height:100%; overflow:hidden;
-    background: url("../img/events-mainphoto.jpg") no-repeat center center fixed;
+    background: url("../img/events-mainphoto3.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/events-mainphoto.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/events-mainphoto.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/events-mainphoto3.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/events-mainphoto3.jpg', sizingMethod='scale')";
     background-attachment: initial;
     }
-.hero h1 { margin:1em 2em; font-size:2.4em; color:#253a63; }
+.hero h1 { margin:1em 2em; font-size:2.4em; color:#fff; }
 
 article.main { background:transparent; min-height:600px; }
 
 
 /**** Event Filters ****/
 
-.filters { background: rgba(255,255,255,0.9); padding-bottom:1em; }
+.filters { background: rgba(255,255,255,0.8); padding-bottom:1em; margin:.5em 0; }
 .filters button {display:block; background:none; border:none; color:#3b62b0; transition: 100ms linear;}
 
 .extras { clear:both; }
 
-.regions { border-right:solid 1px #ddd; }
+.regions h2 { margin-bottom:1em; }
 .regions button i.mg { display:block; font-size:5em; }
 
 .industries button { text-align:left; margin-bottom:.1em; white-space:nowrap; }
@@ -72,6 +72,7 @@ table#listings .btn-spex { top:4em; }
 ***********************************************/
 
 @media only screen and (max-width : 992px) {
+    .filters { width:100%; }
     .filters button { font-size:.8em; }
     table#listings td.infocol { padding-right:100px; }
 }
@@ -83,10 +84,8 @@ table#listings .btn-spex { top:4em; }
     table#listings .eventname { font-size:1em; }
     table#listings .venue { font-size:.8em; }
     #listings_wrapper { padding-top:0; }   
-    #listings_filter { border-radius:0; margin-top:0; }
-    .btn-reset { position:static; margin:0; width:100%; background:#253a63; border-radius:0; }
-}
-@media only screen and (max-width : 640px) {
-    #listings_filter label { width:100%; }
+    #listings_filter { border-radius:0; margin-top:0; width:100%; }
+    #listings_filter label { width:100%; text-align:center; }
     #listings_filter label input { width:60%; }
+    .btn-reset { position:static; margin:0; width:100%; background:#253a63; border-radius:0; }
 }
