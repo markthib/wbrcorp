@@ -23,7 +23,7 @@ article.main { background:transparent; min-height:600px; }
 /**** Event Filters ****/
 
 .filters { background: rgba(255,255,255,0.8); padding-bottom:1em; margin:.5em 0; }
-.filters button {display:block; background:none; border:none; color:#3b62b0; transition: 100ms linear;}
+.filters button {display:block; background:none; border:none; color:#3b62b0; transition: 100ms linear; outline:none; }
 
 .extras { clear:both; }
 
