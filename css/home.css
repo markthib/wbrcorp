@@ -22,18 +22,18 @@ article.main section .btn-blue { margin: 1em auto; width:80%; padding:1em; }
 .colicon { margin:-25px auto 0; display:block; }
 
 .homeabout { overflow:hidden; position:relative; padding:0; margin:0; height:343px; background: #000 url("../img/home-aboutphoto.jpg") no-repeat top left; }
-.homeabout .container { width:40%; text-align:center; margin-top:4em; position:absolute; right:15%; }
-.homeabout .container h2 { color:#fff; margin-bottom:1.5em; line-height:1.5em;}
+.homeabout .container { width:40%; text-align:center; margin-top:3em; position:absolute; right:15%; }
+.homeabout .container h2 { color:#fff; margin-bottom:1em; line-height:1.3em;}
 
 .homequotes { background:#253a63; padding:1.5em 0; color:#fff; }
 .homequotes blockquote { border-color:#8490a7; }
 .homequotes .media-body { padding:1em 0; max-width:80%; }
 .homequotes .media img { max-width:120px; border:solid 4px #8490a7; -webkit-filter:grayscale(80%); filter:grayscale(80%); }
 
-.homecontact { overflow:hidden; position:relative; padding:0; margin:0; height:258px; background: #fff url("../img/home-contact.jpg") no-repeat top right; }
+.homecontact { overflow:hidden; position:relative; padding:0; margin:0; min-height:258px; background: #fff url("../img/home-contact.jpg") no-repeat top right; }
 .homecontact .container { width:45%; text-align:center; margin-top:1.5em; position:absolute; }
 .homecontact h3 { line-height:1.5em;}
-.homecontact p { margin-bottom:2em; }
+.homecontact p { margin-bottom:.5em; }
 
 
 /***********************************************
@@ -61,46 +61,41 @@ article.main section .btn-blue { margin: 1em auto; width:80%; padding:1em; }
     .hero h1 { font-size:2em; }
     article.main section { border-bottom:solid 1px #aaa; padding-bottom:1em; }
 }
-@media only screen and (max-width : 768px) {
-  article.main section { margin-bottom:3em; }
-  article.main section:last-child { margin-bottom:0; }
-  .homequotes .media-body { max-width:70%; }  
-	.homecontact { background-position: 330px top; }
-	.homecontact p { margin-bottom:.5em; }
-}
-@media only screen and (max-device-width : 768px) {
-	.hero h1 { padding:0 1em; margin-top:1em; float:left; font-size:2.2em; }
-	article.main { margin-top:380px; }
-    .homecontact .container { margin-top:0; }
-}
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
-    img.colicon { margin-top:-40px; }
-	article.main p { clear:both; }
-}
 @media only screen and (max-device-width : 600px) {
 	.hero {	overflow: scroll; -webkit-overflow-scrolling: touch; }
 	.hero { background-position: 70% top; }
     .hero h1 { font-size:1.8em; }
     .homeabout { background-position: -40px top; }
 	.homeabout .container { width:80%; text-align:right; margin-top:1em; right:0; bottom:0; background:rgba(0,0,0,0.3); padding-bottom:1em; }
-	.homecontact { background-image: none; height:220px; }
+    .homecontact .container { margin-top:0; }
+}
+@media only screen and (max-width : 768px) {
+  article.main section { margin-bottom:3em; }
+  article.main section:last-child { margin-bottom:0; }
+  .homequotes .media-body { max-width:70%; }  
+	.homecontact { background-image:none; }
 	.homecontact .container { width:100%; }
-	.homecontact .container p { margin-bottom: .5em; }
+}
+@media only screen and (max-device-width : 768px) {
+	.hero h1 { padding:0 1em; margin-top:1em; float:left; font-size:2.2em; }
+	article.main { margin-top:380px; }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    img.colicon { margin-top:-40px; }
+	article.main p { clear:both; }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	.homecontact { background-position: right top; }
 }
-/* Smallish Screens and iPads */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
 	article.main section .btn-blue { width:100%; }
 	.homecontact { background-position: 420px top; }
-	.homecontact .container { margin-top:0; }
+	.homecontact .container { margin-top:0; width:40%; }
 	img.colicon { margin:0 0 0 35%; }
 }
-/* Big and Beautiful */
 @media only screen and (min-width : 1280px) {
 	.homequotes .media img { max-width:160px; }
 	.homecontact .container { width:60%; margin-top:2.5em; }
 	.homecontact .container br { display:none; }
+	.homecontact p { margin-bottom:2em; }
 }
-

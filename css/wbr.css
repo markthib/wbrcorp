@@ -97,10 +97,9 @@ nav.footernav li a:hover { color:#f7c996; background:transparent; }
 ***********************************************/
 /* Mobile: Phablet to Reasonable */
 @media only screen and (max-width : 768px) {
-    body { padding-bottom:65px }
+    body { padding-bottom:4em; }
     .mainnav { height:auto; }
     .mainnav .navbar-nav { background:#3b62b0; }
-    footer p { display:none; }
     footer img { opacity:1; }
     footer .container { padding:0; }
 }
