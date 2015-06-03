@@ -26,6 +26,7 @@ article.main section .btn-blue { margin: 1em auto; width:80%; padding:1em; }
 .homeabout .container h2 { color:#fff; margin-bottom:1em; line-height:1.3em;}
 
 .homequotes { background:#253a63; padding:1.5em 0; color:#fff; }
+.homequotes .media {display:none;} /* Hide initially for JS Randomizer  */
 .homequotes blockquote { border-color:#8490a7; }
 .homequotes .media-body { padding:1em 0; max-width:80%; }
 .homequotes .media img { max-width:120px; border:solid 4px #8490a7; -webkit-filter:grayscale(80%); filter:grayscale(80%); }
@@ -61,20 +62,22 @@ article.main section .btn-blue { margin: 1em auto; width:80%; padding:1em; }
     .hero h1 { font-size:2em; }
     article.main section { border-bottom:solid 1px #aaa; padding-bottom:1em; }
 }
-@media only screen and (max-device-width : 600px) {
+@media only screen and (max-device-width : 670px) {
 	.hero {	overflow: scroll; -webkit-overflow-scrolling: touch; }
 	.hero { background-position: 70% top; }
     .hero h1 { font-size:1.8em; }
+	article.main section { margin-bottom:3em; }
+    article.main section:last-child { margin-bottom:0; }
     .homeabout { background-position: -40px top; }
 	.homeabout .container { width:80%; text-align:right; margin-top:1em; right:0; bottom:0; background:rgba(0,0,0,0.3); padding-bottom:1em; }
     .homecontact .container { margin-top:0; }
 }
 @media only screen and (max-width : 768px) {
-  article.main section { margin-bottom:3em; }
-  article.main section:last-child { margin-bottom:0; }
-  .homequotes .media-body { max-width:70%; }  
+	article.main .btnrow { margin-bottom:0; }
+	.homequotes .media-body { max-width:70%; }  
 	.homecontact { background-image:none; }
-	.homecontact .container { width:100%; }
+	.homecontact .container { width:100%!important; }
+	.footernav .navbar-right { padding-right:10px; }
 }
 @media only screen and (max-device-width : 768px) {
 	.hero h1 { padding:0 1em; margin-top:1em; float:left; font-size:2.2em; }
