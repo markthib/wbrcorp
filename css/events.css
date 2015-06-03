@@ -36,8 +36,8 @@ article.main { background:transparent; min-height:600px; }
 .regions button:hover, .industries button:hover,
 .regions button:focus, .industries button:focus { color:#f0942d; }
 
-.btn-reset { display:block; clear:both; background-color:#253a63; color:#fff; padding:.5em 1em; margin:1em auto; border:0; }
-.btn-reset:hover { background:#f0942d; }
+.btn-reset { display:block; clear:both; background-color:#3b62b0; color:#fff; padding:.7em 1em; margin:1em auto; border:0; position:absolute; border-top-left-radius: .5em; border-top-right-radius: .5em; z-index:9; transition: 100ms linear; }
+.btn-reset:hover { color:#f7c996; }
 
 
 
@@ -81,7 +81,10 @@ table#listings .btn-spex { top:4em; }
     .industries button { padding-left:20%; width:80%; white-space:normal; }
     table#listings img.eventlogo { max-width: 90px; max-height:90px; }
     table#listings .eventname { font-size:1em; }
-    table#listings .venue { font-size:.8em; }   
+    table#listings .venue { font-size:.8em; }
+    #listings_wrapper { padding-top:0; }   
+    #listings_filter { border-radius:0; margin-top:0; }
+    .btn-reset { position:static; margin:0; width:100%; background:#253a63; border-radius:0; }
 }
 @media only screen and (max-width : 640px) {
     #listings_filter label { width:100%; }
