@@ -1,8 +1,11 @@
-/* Site */
-.mainnav { position:absolute; overflow:visible; left:0; }
-
 /* Home */
 .hero { background-position:center top; }
 .hero h1 { margin-top:2em; }
 article.main { margin-top:400px; }
 .homequotes .media-left { width:120px; }
+
+/* Events */
+.filters { background:#fff; }
+table#listings { table-layout: fixed; }
+table#listings td.logocol { max-width:150px !important; }
+table#listings img.eventlogo { width:140px !important; }
