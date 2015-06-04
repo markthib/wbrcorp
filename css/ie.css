@@ -5,5 +5,11 @@
 .homequotes .media-left { width:120px; }
 
 /* Events */
+.events h1 { color:#253a63; } 
+.events .filters { background: #fff; }
 .events table#listings td.logocol { max-width:150px !important; }
 .events table#listings img.eventlogo { width:140px !important; }
+
+/* About */
+.about .hero { background:#253a63; }
+.about article.main { margin-top:100px; }
