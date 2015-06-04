@@ -1,10 +1,9 @@
 /* Home */
-.hero { background-position:center top; }
-.hero h1 { margin-top:2em; }
-article.main { margin-top:400px; }
+.home .hero { background-position:center top; }
+.home .hero h1 { margin-top:2em; }
+.home article.main { margin-top:400px; }
 .homequotes .media-left { width:120px; }
 
 /* Events */
-.filters { background:#fff; margin-top:-400px}
-table#listings td.logocol { max-width:150px !important; }
-table#listings img.eventlogo { width:140px !important; }
+.events table#listings td.logocol { max-width:150px !important; }
+.events table#listings img.eventlogo { width:140px !important; }
