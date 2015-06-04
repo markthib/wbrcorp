@@ -5,7 +5,6 @@ article.main { margin-top:400px; }
 .homequotes .media-left { width:120px; }
 
 /* Events */
-.filters { background:#fff; }
-table#listings { table-layout: fixed; }
+.filters { background:#fff; margin-top:-400px}
 table#listings td.logocol { max-width:150px !important; }
 table#listings img.eventlogo { width:140px !important; }
