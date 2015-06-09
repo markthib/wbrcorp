@@ -36,7 +36,7 @@ article.main { background:transparent; min-height:600px; }
 .regions button:hover, .industries button:hover,
 .regions button:focus, .industries button:focus { color:#f0942d; }
 
-.btn-reset { display:block; clear:both; background-color:#3b62b0; color:#fff; padding:.7em 1em; margin:1em auto; border:0; position:absolute; border-top-left-radius: .5em; border-top-right-radius: .5em; z-index:9; transition: 100ms linear; }
+.btn-reset { display:block; clear:both; background-color:#3b62b0; color:#fff; padding:.8em 1em; margin:1em auto 0; border:0; position:absolute; border-top-left-radius: .5em; border-top-right-radius: .5em; z-index:9; transition: 100ms linear; }
 .btn-reset:hover { color:#f7c996; }
 
 
@@ -79,7 +79,7 @@ table#listings .btn-spex { top:4em; }
 @media only screen and (max-width : 768px) {
     .filters button { font-size:inherit; margin-top:.4em; }
     .regions, .industries { border:0; text-align:center; }
-    .industries button { padding-left:10%; width:85%; white-space:normal; }
+    .industries button { padding-left:10%; width:90%; white-space:normal; font-size:.9em; }
     table#listings img.eventlogo { max-width: 90px; max-height:90px; }
     table#listings .eventname { font-size:1em; }
     table#listings .venue { font-size:.8em; }
