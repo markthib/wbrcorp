@@ -15,8 +15,8 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/events-mainphoto3.jpg', sizingMethod='scale')";
     background-attachment: initial;
     }
-.hero h1 { margin:1em 2em; font-size:2.4em; color:#fff; }
 
+.hero h1 { background:transparent; }
 article.main { background:transparent; min-height:600px; }
 
 
