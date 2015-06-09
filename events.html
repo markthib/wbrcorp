@@ -10,6 +10,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
+    <link href="css/wbr.css" rel="stylesheet">
+    <link href="css/events.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,11 +22,6 @@
       <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <link href="css/ie.css" rel="stylesheet">
     <![endif]-->
-
-    <link href="css/wbr.css" rel="stylesheet">
-    <link href="css/events.css" rel="stylesheet">
-    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
-    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
 
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icon/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icon/apple-touch-icon-114x114.png" />
@@ -76,15 +76,15 @@
           <div class="btn-group regions col-xs-12 col-sm-6" role="group" aria-label="...">
             <h2>Filter by Region</h2>
             <div class="row">
-              <button class="btn-region col-xs-12 col-sm-4" id="filter-americas" value="Americas" type="submit">
+              <button class="btn-region col-sm-12 col-md-4" id="filter-americas" value="Americas" type="submit">
                 <i class="mg map-wrld-am"></i>
                 North America
               </button>
-              <button class="btn-region col-xs-12 col-sm-4" id="filter-europe" value="Europe" type="submit">
+              <button class="btn-region col-sm-12 col-md-4" id="filter-europe" value="Europe" type="submit">
                 <i class="mg map-wrld-eu"></i>
                 Europe
               </button>
-              <button class="btn-region col-xs-12 col-sm-4" id="filter-asia" value="Asia" type="submit">
+              <button class="btn-region col-sm-12 col-md-4" id="filter-asia" value="Asia" type="submit">
                 <i class="mg map-wrld-as"></i>
                 Asia
               </button>
@@ -94,7 +94,7 @@
           <div class="btn-group industries col-xs-12 col-sm-6" role="group" aria-label="...">
             <h2>Filter by Industry</h2>
             <div class="row">
-              <div class="col-xs-12 col-sm-6">
+              <div class="col-sm-12 col-md-6">
                 <button class="btn-industry" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
                 <button class="btn-industry" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
                 <button class="btn-industry" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
@@ -102,7 +102,7 @@
                 <button class="btn-industry" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
                 <button class="btn-industry" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
               </div>
-              <div class="col-xs-12 col-sm-6">
+              <div class="col-sm-12 col-md-6">
                 <button class="btn-industry" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
                 <button class="btn-industry" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
                 <button class="btn-industry" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>

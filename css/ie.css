@@ -10,6 +10,7 @@
 .events table#listings td.logocol { max-width:150px !important; }
 .events table#listings img.eventlogo { width:140px !important; }
 
-/* About */
-.about .hero { background:#253a63; }
-.about article.main { margin-top:100px; }
+/* No Hero Images */
+.content .hero { background:#253a63; }
+.content .hero h1 { padding:.4em 0; text-align:center; margin:0; }
+.content article.main { margin-top:100px; }
