@@ -2,13 +2,13 @@
 
  Aesthetic Training Program
 
-	--- WBR Palette ---
-	Bright Blue:	#3b62b0	rgba(59,98,176,1)
-	Dark Blue:		#253a63	rgba(37,58,99,1)
-	Orange:			#f0942d	rgba(240,148,45,1)
-	Pale Orange:	#f7c996	rgba(247,201,150,1)
-	Storm Grey:		#8490a7	rgba(132,144,167,1)
-	Pale Grey:		#c8ced8	rgba(200,206,216,1)
+    --- WBR Palette ---
+    Bright Blue:    #3b62b0 rgba(59,98,176,1)
+    Dark Blue:      #253a63 rgba(37,58,99,1)
+    Orange:         #f0942d rgba(240,148,45,1)
+    Pale Orange:    #f7c996 rgba(247,201,150,1)
+    Storm Grey:     #8490a7 rgba(132,144,167,1)
+    Pale Grey:      #c8ced8 rgba(200,206,216,1)
 
 ***********************************************/
 
@@ -25,18 +25,21 @@
 }
 
 html { background:#253a63; }
-body { background:#c8ced8; }
+body { background:#253a63; font-size:16px; font-family: "Gill Sans MT", Calibri, sans-serif;}
 
-h1 { font:normal 30px 'latoregular'; }
-h2 { font:normal 24px 'latoregular'; color:#253a63; }
-h3 { font:normal 20px 'latoregular'; color:#253a63; }
-h4 { font:normal 16px 'latoregular'; color:#3b62b0; }
-
-.btn { transition: 100ms linear; color:#fff; }
+h1 { font:normal 3em 'latoregular'; }
+h2, h3, h4, h5, h6 { font:normal 1.25em 'latoregular'; color:#253a63; }
+h4 { color:#8490a7; font-weight:bold; }
+h6 { color:#444; }
+ 
+a { color:#3b62b0; transition: 100ms linear; }
+a:hover { color:#253a63; }
+.btn { transition: 100ms linear; color:#fff; text-shadow: 0 0 1em rgba(50,30,0,0.7); }
 .btn-blue { background-color:#3b62b0; border-radius:0; }
-.btn-blue:hover { background-color:#f0942d; color:#fff; }
-.btn-orange { background-color:#f0942d; border-radius:0; padding:.8em 1em }
-.btn-orange:hover { background-color:#3b62b0; color:#fff; }
+.btn-dk { background-color:#253a63; border-radius:0; }
+.btn-blue:hover, .btn-blue:active, .btn-dk:hover, .btn-blue:active { background-color:#f0942d; color:#fff; }
+.btn-orange { background-color:#f0942d; border-radius:0; padding:.8em 1em; }
+.btn-orange:hover, .btn-orange:active { background-color:#3b62b0; color:#fff; }
 
 nav a { transition: 100ms linear; font-family:'latoregular'; letter-spacing:.05em; }
 
@@ -56,43 +59,36 @@ header h1 { font-size:1.5em; float:left; }
 .topnav .social a { display:block; float:left; padding:5px; margin:5px 5px 0; }
 .topnav a:hover { color:#f7c996; background:transparent; }
 
-.mainnav { background:#3b62b0; font-size:1.2em; height:3.2em; position:fixed; width:100%; z-index:9; }
+.mainnav { background:#3b62b0; font-size:1.2em; height:3.2em; position:relative; width:100%; z-index:9; }
 .mainnav .navbar-nav { margin:0 auto; float:none; width:33em; }
 .mainnav li { padding:0 .5em; }
 .mainnav li a { padding:1em; }
-.mainnav .navbar-brand { height:80px; padding:0; margin-top:-.8em; }
+.mainnav .navbar-brand { height:80px; padding:0; margin-top:-.8em; color:#fff; }
 .mainnav .navbar-brand:hover { background:transparent; }
 
-.content { position:relative; overflow:hidden; padding:0; margin:0; width:100%; height:100%; background:transparent; }
+.content { position:relative; overflow:hidden; padding:0; margin:0; width:100%; height:100%; background:transparent; font-size:1.2em; }
 
-footer p { float:left; padding:1em; }
-footer img { position:absolute; left:50%; height:42px; margin-top:5px; transition: 200ms linear; opacity:.7; }
+.hero h1 { color:#fff; text-align:center; margin:0; padding:.8em 0; font-size:2.4em; text-shadow: 0 0 0.5em rgba(0,0,0,1); background:rgba(0,0,0,0.4);}
+article.main { background:#c8ced8; position:relative; padding-bottom:2em; }
+
+.bg-alt { background:#e8e8ee; padding:1em auto; margin:2em auto; }
+img.pull-left { margin-right:1em; }
+
+footer p { padding:1em; font-size:.9em; }
+footer img { height:42px; margin-top:5px; transition: 200ms linear; opacity:.7; }
 footer img:hover { opacity:1; }
-.footernav { min-height:53px; width:100%; background:#253a63; color:#fff; }
-.footernav ul { float:right; }
-nav.footernav a { padding:1em; }
-nav.footernav a:hover { color:#f7c996; background:transparent; }
-.footernav button { background:#f0942d; padding:5px; margin:8px; }
-#footerlist { background:#3b62b0; clear:both; width:100%; text-align:center; margin: 1em 0 0; padding:0; }
-#footerlist a:hover { background:#c8ced8; color:#253a63; }
-footer a.topbtn { border-radius:4px; background:#3b62b0; padding:5px; margin:8px; border:1px solid transparent; display:inline-block; }
-footer a.topbtn:hover { background:#3b62b0; color:#fff; text-decoration:none; }
+nav.footernav { height:65px; background:#253a63; color:#fff; }
+nav.footernav li a:hover { color:#f7c996; background:transparent; }
 
-/* Headroom Navigation Hiding */
+#desknav { position:relative; }
+#desknav .footerimg { position:absolute; left:50%; display:block; top:0; padding:0; 1em;}
+#desknav li a { padding:1em .5em; }
 
-.headroom { transition: transform 200ms linear; }
-.headroom--not-top { position:relative; } 				/* refresh fix */
-.headroom--pinned { position:fixed; top:0; transform: translateY(0%); } /* scrolling up unhide */
-.headroom--pinned .navbar-brand { margin-top:0; } 		/* logo top align */
-.headroom--unpinned { transform: translateY(-250%); } 	/* scrolling down hide */
-.headroom--top { position:relative; } 					/* lock into position at top */
-.headroom--top .navbar-brand  {margin-top:-.8em; } 		/* logo center align */
-
-/* Footer Headroom Navigation Hiding */
-
-#mobilenav.headroom--pinned { position:fixed; bottom:0; top:auto; transform: translateY(0%); } /* scrolling up unhide */
-#mobilenav.headroom--unpinned { transform: translateY(250%); } 	/* scrolling down hide */
-#mobilenav.headroom--bottom { position:relative; } 	/* lock into position at bottom */
+#mobilenav ul { margin:0 auto; overflow:hidden; padding:.3em; }
+#mobilenav li { text-align:center; width:18%; padding:0 1%; }
+#mobilenav li a { padding:1em 0; }
+#mobilenav .navbar-brand { padding:0; float:none; }
+#mobilenav img { margin:5px auto 0; }
 
 
 /***********************************************
@@ -100,19 +96,39 @@ footer a.topbtn:hover { background:#3b62b0; color:#fff; text-decoration:none; }
  Media: Y U SO QUERULOUS??
 
 ***********************************************/
-/* Mobile: Phablet to Reasonable; */
+/* Mobile: Phablet to Reasonable */
 @media only screen and (max-width : 768px) {
-    body { padding-bottom:55px; }
+    body { padding-bottom:4em; }
     .mainnav { height:auto; }
     .mainnav .navbar-nav { background:#3b62b0; }
-    footer p { display:none; }
-	footer img { opacity:1; }
-	footer .container { padding:0; }
+    footer img { opacity:1; }
+    footer .container { padding:0; }
 }
-@media only screen and (max-width : 470px) {
-	header h1 { text-align:center; width:100%; }
-	.topnav .social { clear:both; float:none; margin:0 0 1em; overflow:hidden; text-align:center; padding-left:33%; }
+@media only screen and (max-width : 500px) {
+    header .navbar-brand { text-align:center; width:100%; }
+    .topnav .social { clear:both; float:none; margin:0 0 1em; overflow:hidden; text-align:center; padding-left:33%; }
+    #mobilenav li { font-size:.85em; }
 }
 @media only screen and (max-width : 320px) {
-	header h1 { font-size:16px; font-weight:bold; }
+    header .navbar-brand { font-size:16px; font-weight:bold; }
+}
+
+/* Gutenbergian Styles */
+@media print {
+    body { width:100% !important; padding:0 5pt!important; color: #000 !important; background: #fff !important; line-height: 1.4; word-spacing:1.1pt; letter-spacing:0.2pt; }
+	h1 { font-size:28pt !important; position:static !important; text-align:center !important; width:100% !important; margin:1em 0 !important; padding:0 !important; }
+    nav, img, .btnrow, .nav { display:none !important; }
+    .hero, .homeabout { height:auto !important; position:static !important; }
+    article.main { margin-top:0 !important; position:static !important; font-size:14pt; font-family:Georgia, serif; }
+    .container-fluid .container { width:90% !important; margin:0 auto !important; position:static !important; }
+    a:after { content: "" !important; }
+    a { font-weight: bold !important; text-decoration: none; border-bottom:dotted 2pt black !important; }
+    a.btn { background:none !important; display:inline !important; padding:0 !important;  font-family:Georgia, serif;}
+    section { padding:1em 0 !important; }
+    h2, h3, h4 { page-break-after: avoid; }
+    ul, img { page-break-inside: avoid; }
+    blockquote { border:none; border-left:solid 4pt black !important;  font-family:Georgia, serif;}
+    cite { font-size:0.8em; padding-left:2em; }
+    .media .pull-right { float:none!important; }
+    .col-sm-4 { width:100%; }
 }

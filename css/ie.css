@@ -1,8 +1,17 @@
-/* Site */
-.mainnav { position:absolute; overflow:visible; left:0; }
-
 /* Home */
-.hero { background-position:center top; }
-.hero h1 { margin-top:2em; }
-article.main { margin-top:400px; }
+.home .hero { background-position:center top; }
+.home .hero h1 { margin-top:2em; }
+.home article.main { margin-top:400px; }
 .homequotes .media-left { width:120px; }
+
+/* No Hero Images */
+.content .hero { background:#253a63; }
+.content .hero h1 { padding:.4em 0; text-align:center; margin:0; }
+.content article.main { margin-top:100px; }
+
+/* Events */
+.events .hero { background:transparent; }
+.events  .hero h1 { color:#253a63; } 
+.events .filters { background: #fff; }
+.events table#listings td.logocol { max-width:150px !important; }
+.events table#listings img.eventlogo { width:140px !important; }

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Worldwide Business Research | Event Listings</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="css/wbr.css" rel="stylesheet">
+    <link href="css/events.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <link href="css/ie.css" rel="stylesheet">
+    <![endif]-->
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="img/icon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16" />
+	<meta name="application-name" content="Worldwide Business Research"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+	
+  </head>
+  <body>
+  	<header>
+  		<nav class="topnav">
+  		  <div class="container">
+          <a href="/wbrcorp/" class="navbar-brand">Worldwide Business Research</a>
+      		<div class="social">
+	            <a target="_blank" href="https://twitter.com/WBResearch"><i class="fa fa-twitter fa-lg"></i></a>
+	            <a target="_blank" href="https://www.linkedin.com/company/worldwide-business-research"><i class="fa fa-linkedin fa-lg"></i></a>
+        	</div>
+          </div>
+	    </nav>
+	    <nav id="mainnav" class="mainnav headroom hidden-xs">
+  		  <div class="container">
+        	<ul class="nav navbar-nav">
+            	<li><a href="/wbrcorp/events">Events</a></li>
+            	<li><a href="/wbrcorp/sponsor">Sponsor</a></li>
+            	<li class="navhome hidden-xs"><a href="/wbrcorp/" title="Home | WBR" class="navbar-brand"><img src="img/navlogo.png" alt="WBR"></a></li>
+            	<li><a href="/wbrcorp/about">About</a></li>
+            	<li><a href="/wbrcorp/contact">Contact</a></li>
+          	</ul>
+          </div>
+	    </nav>
+	</header>
+
+    <div class="content events">
+
+        <div class="hero">
+          <h1>WBR Events</h1>
+
+        </div>
+		
+        <article class="main">
+
+          <div class="container">
+	
+        <section class="filters row">
+
+          <div class="btn-group regions col-xs-12 col-sm-6" role="group" aria-label="...">
+            <h2>Filter by Region</h2>
+            <div class="row">
+              <button class="btn-region col-xs-12 col-md-4" id="filter-americas" value="Americas" type="submit">
+                <i class="mg map-wrld-am"></i>
+                North America
+              </button>
+              <button class="btn-region col-xs-12 col-md-4" id="filter-europe" value="Europe" type="submit">
+                <i class="mg map-wrld-eu"></i>
+                Europe
+              </button>
+              <button class="btn-region col-xs-12 col-md-4" id="filter-asia" value="Asia" type="submit">
+                <i class="mg map-wrld-as"></i>
+                Asia
+              </button>
+            </div>
+          </div>
+          
+          <div class="btn-group industries col-xs-12 col-sm-6" role="group" aria-label="...">
+            <h2>Filter by Industry</h2>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <button class="btn-industry" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
+                <button class="btn-industry" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
+                <button class="btn-industry" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
+                <button class="btn-industry" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
+                <button class="btn-industry" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
+                <button class="btn-industry" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <button class="btn-industry" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
+                <button class="btn-industry" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
+                <button class="btn-industry" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
+                <button class="btn-industry" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
+                <button class="btn-industry" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
+                <button class="btn-connect" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> 1-to-1 Networking</button>
+              </div>
+            </div>
+
+          </div>
+                 
+      </section>
+			
+			<section class="table-responsive">
+              
+			<button class="btn-reset" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset | View All Events</button>
+				
+            <table id="listings" class="display table-hover">
+              <thead>
+                  <tr>
+                      <th></th>
+                      <th>Event Name <span class="glyphicon glyphicon-sort"></span></th>
+                      <th>Date <span class="glyphicon glyphicon-sort"></span></th>
+                      <th>Region</th>
+                      <th>Industry</th>
+                      <th>Connect</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td><a href="http://etaileast.wbresearch.com" target="_blank"><img alt="eTail East" src="img/logos/etail.png" class="eventlogo"/></a></td>
+                      <td><a href="http://etaileast.wbresearch.com" target="_blank" class="eventname">eTail East</a>
+                        <p class="venue">Boston, MA</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://etaileast.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://etaileast.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://etaileast.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://etaileast.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/08/10</td>
+                      <td>Americas</td>
+                      <td>eCommerce / Retail</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://etailfrance.wbresearch.com" target="_blank"><img alt="eTail France" src="img/logos/etail.png" class="eventlogo" /></a></td>
+                      <td><a href="http://etailfrance.wbresearch.com" target="_blank" class="eventname">eTail France</a>
+                        <p class="venue"></p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://etailfrance.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://etailfrance.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://etailfrance.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://etailfrance.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/11/04</td>
+                      <td>Europe</td>
+                      <td>eCommerce / Retail</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://logipharmaeu.wbresearch.com" target="_blank"><img alt="LogiPharma" src="img/logos/logipharma.png" class="eventlogo" /></a></td>
+                      <td><a href="http://logipharmaeu.wbresearch.com" target="_blank" class="eventname">LogiPharma</a>
+                        <p class="venue">Montreux Music &amp; Convention Centre, Montreux, Switzerland</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://logipharmaeu.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://logipharmaeu.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://logipharmaeu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://logipharmaeu.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/08/15</td>
+                      <td>Europe</td>
+                      <td>Procurement, Pharma / Biotech</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://procureconindirecteu.wbresearch.com" target="_blank"><img alt="ProcureCon Indirect" src="img/logos/PConIndirectEurope.png" class="eventlogo" /></a></td>
+                      <td><a href="http://procureconindirecteu.wbresearch.com" target="_blank" class="eventname">ProcureCon Indirect</a>
+                        <p class="venue">NH Grand Hotel Krasnapolsky, Amsterdam</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://procureconindirecteu.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://procureconindirecteu.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://procureconindirecteu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://procureconindirecteu.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/05/21</td>
+                      <td>Europe</td>
+                      <td>Procurement</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://digitaltravel.wbresearch.com" target="_blank"><img alt="Digital Travel Summit" src="img/logos/digital-travel.png" class="eventlogo" /></a></td>
+                      <td><a href="http://digitaltravel.wbresearch.com" target="_blank" class="eventname">Digital Travel Summit</a>
+                        <p class="venue">Green Valley Ranch Resort, Spa &amp; Casino, Las Vegas, NV</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://digitaltravel.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://digitaltravel.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://digitaltravel.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://digitaltravel.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/04/27</td>
+                      <td>Americas</td>
+                      <td>eCommerce / Retail</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://procureconasia.wbresearch.com" target="_blank"><img alt="ProcureCon Asia" src="img/logos/PConAsia.png" class="eventlogo" /></a></td>
+                      <td><a href="http://procureconasia.wbresearch.com" target="_blank" class="eventname">ProcureCon Asia</a>
+                        <p class="venue">Amara, Singapore</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://procureconasia.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://procureconasia.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://procureconasia.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://procureconasia.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/06/23</td>
+                      <td>Asia</td>
+                      <td>Procurement</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://procureconwest.wbresearch.com" target="_blank"><img alt="ProcureCon Indirect West" src="img/logos/PConIndirectWest.png" class="eventlogo" /></a></td>
+                      <td><a href="http://procureconwest.wbresearch.com" target="_blank" class="eventname">ProcureCon Indirect West</a>
+                        <p class="venue">Wigwam, Phoenix, Arizona</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://procureconwest.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://procureconwest.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://procureconwest.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://procureconwest.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/09/28</td>
+                      <td>Americas</td>
+                      <td>Procurement</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://bionetwork.wbresearch.com" target="_blank"><img alt="BioNetwork Partnering Summit" src="img/logos/bionetwork.png" class="eventlogo" /></a></td>
+                      <td><a href="http://bionetwork.wbresearch.com" target="_blank" class="eventname">BioNetwork Partnering Summit</a>
+                        <p class="venue">The Ritz-Carlton, Laguna Niguel, CA</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://bionetwork.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://bionetwork.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://bionetwork.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://bionetwork.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/10/26</td>
+                      <td>Americas</td>
+                      <td>Pharma / Biotech, Healthcare</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://logipharmaus.wbresearch.com" target="_blank"><img alt="LogiPharma" src="img/logos/LogiPharmaUS.png" class="eventlogo" /></a></td>
+                      <td><a href="http://logipharmaus.wbresearch.com" target="_blank" class="eventname">LogiPharma</a>
+                        <p class="venue"></p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://logipharmaus.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://logipharmaus.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://logipharmaus.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://logipharmaus.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/09/28</td>
+                      <td>Americas</td>
+                      <td>Pharma / Biotech, Supply Chain</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://fieldserviceusa.wbresearch.com" target="_blank"><img alt="Field Service USA" src="img/logos/FieldServiceUSA.png" class="eventlogo" /></a></td>
+                      <td><a href="http://fieldserviceusa.wbresearch.com" target="_blank" class="eventname">Field Service USA</a>
+                        <p class="venue">Palm Springs, CA</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://fieldserviceusa.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://fieldserviceusa.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://fieldserviceusa.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://fieldserviceusa.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/04/20</td>
+                      <td>Americas</td>
+                      <td>Service / Support</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://fieldserviceeast.wbresearch.com" target="_blank"><img alt="Field Service East" src="img/logos/FieldServiceEast.png" class="eventlogo" /></a></td>
+                      <td><a href="http://fieldserviceeast.wbresearch.com" target="_blank" class="eventname">Field Service East</a>
+                        <p class="venue">Westin Buckhead, Atlanta, GA</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://fieldserviceeast.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://fieldserviceeast.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://fieldserviceeast.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://fieldserviceeast.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/09/15</td>
+                      <td>Americas</td>
+                      <td>Service / Support</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://fieldservicemd.wbresearch.com" target="_blank"><img alt="Field Service Medical" src="img/logos/FieldServiceMd.png" class="eventlogo" /></a></td>
+                      <td><a href="http://fieldservicemd.wbresearch.com" target="_blank" class="eventname">Field Service Medical</a>
+                        <p class="venue">San Diego, CA</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://fieldservicemd.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://fieldservicemd.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://fieldservicemd.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://fieldservicemd.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2016/02/22</td>
+                      <td>Americas</td>
+                      <td>Service / Support, Healthcare</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://fieldservicemdeu.wbresearch.com" target="_blank"><img alt="Field Service Medical Europe" src="img/logos/FieldServiceMdEu.png" class="eventlogo" /></a></td>
+                      <td><a href="http://fieldservicemdeu.wbresearch.com" target="_blank" class="eventname">Field Service Medical Europe</a>
+                        <p class="venue">Conrad Dublin, Ireland</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://fieldservicemdeu.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://fieldservicemdeu.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://fieldservicemdeu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://fieldservicemdeu.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/03/23</td>
+                      <td>Europe</td>
+                      <td>Service / Support, Healthcare</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://fieldserviceeu.wbresearch.com" target="_blank"><img alt="Field Service Europe" src="img/logos/FieldServiceEu.png" class="eventlogo" /></a></td>
+                      <td><a href="http://fieldserviceeu.wbresearch.com" target="_blank" class="eventname">Field Service Europe</a>
+                        <p class="venue">Movenpick Hotel Amsterdam City Center, Amsterdam , The Netherlands</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://fieldserviceeu.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://fieldserviceeu.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://fieldserviceeu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://fieldserviceeu.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/10/19</td>
+                      <td>Europe</td>
+                      <td>Service / Support</td>
+					  <td>False</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://mobileshoppingconnect.wbresearch.com" target="_blank"><img alt="Mobile Shopping Connect" src="img/logos/connect-mobileshopping.png" class="eventlogo" /></a></td>
+                      <td><a href="http://mobileshoppingconnect.wbresearch.com" target="_blank" class="eventname">Mobile Shopping Connect</a>
+                        <p class="venue">The Langham Pasadena Hotel, Pasadena CA</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://mobileshoppingconnect.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://mobileshoppingconnect.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://mobileshoppingconnect.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://mobileshoppingconnect.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/06/22</td>
+                      <td>Americas</td>
+                      <td>eCommerce / Retail</td>
+					  <td>True</td>
+                  </tr>
+                  <tr>
+                      <td><a href="http://etailconnecteu.wbresearch.com" target="_blank"><img alt="eTail Connect" src="img/logos/connect-etail.png" class="eventlogo" /></a></td>
+                      <td><a href="http://etailconnecteu.wbresearch.com" target="_blank" class="eventname">eTail Connect</a>
+                        <p class="venue">London, UK</p>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-sm hidden-xs" href="http://etailconnecteu.wbresearch.com/agenda" target="_blank">Download Agenda</a>
+                        <a class="btn btn-blue btn-sm btn-agenda hidden-md hidden-lg" href="http://etailconnecteu.wbresearch.com/agenda" target="_blank" aria-hidden="true">Agenda</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://etailconnecteu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
+                        <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://etailconnecteu.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
+                      </td>
+                      <td>2015/09/08</td>
+                      <td>Europe</td>
+                      <td>eCommerce / Retail</td>
+					  <td>True</td>
+                  </tr>
+
+              </tbody>
+          </table>
+			
+		</section>
+          </div> 
+
+        </article>
+
+    </div>
+
+	<footer>
+
+      <nav class="footernav hidden-xs" id="desknav">
+        <div class="container">
+          <p class="navbar-left">Copyright 2015 Worldwide Business Research</p>
+          <a href="/wbrcorp/" title="Home | WBR" class="footerimg"><img src="img/logow.png" alt="WBR"></a>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="/wbrcorp/events">Events</a></li>
+              <li><a href="/wbrcorp/sponsor">Sponsor</a></li>
+              <li><a href="/wbrcorp/about">About</a></li>
+              <li><a href="/wbrcorp/contact">Contact</a></li>
+            </ul>
+          </div>
+      </nav>
+
+      <nav class="footernav visible-xs navbar-fixed-bottom" id="mobilenav" aria-hidden="true">
+        <div class="container">
+          <ul class="nav nav-pills">
+              <li><a href="/wbrcorp/events">Events</a></li>
+              <li><a href="/wbrcorp/sponsor">Sponsor</a></li>
+              <li><a href="/wbrcorp/" title="Home | WBR" class="navbar-brand"><img src="img/logow.png" alt="WBR"></a></li>
+              <li><a href="/wbrcorp/about">About</a></li>
+              <li><a href="/wbrcorp/contact">Contact</a></li>
+            </ul>
+          </div>
+      </nav>
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script>
+    
+    <script>
+      $(document).ready( function () {
+        $('#listings').dataTable( {
+          "paging": false,
+          "info": false,
+          "autoWidth": false,
+          "order": [[2, 'asc']],
+          "columnDefs": [
+              {   //logo 
+                  "targets": [ 0 ],
+                  "className": "logocol",
+                  "orderable": false,
+                  "searchable": false 
+              },
+              {   //event name + info
+                  "targets": [ 1 ],
+                  "className": "infocol" 
+              },
+              {   //dates
+                  "targets": [ 2 ],
+                  "className": "datecol" 
+              },
+              {	  //region
+                  "targets": [ 3 ],
+                  "visible": false
+              },
+              {   //industries
+                  "targets": [ 4 ],
+                  "visible": false
+              },
+              {   //connect
+                  "targets": [ 5 ],
+                  "visible": false
+              }
+          ]
+        } );
+		var table = $('#listings').DataTable();
+		$('.btn-region').click(function() {
+	      table.column().search('')
+	      table.column(3).search(this.value).draw();
+		});
+		$('.btn-industry').click(function() {
+	      table.column().search('')
+	      table.column(4).search(this.value).draw();
+		});
+		$('.btn-connect').click(function() {
+	      table.column().search('')
+	      table.column(5).search(this.value).draw();
+		});
+		$('.btn-reset').click(function() {
+			table.column().search(this.value).draw();
+		});
+    });
+    </script>
+  </body>
+</html>

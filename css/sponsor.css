@@ -1,0 +1,46 @@
+/***********************************************
+
+ Urban Planning
+
+***********************************************/
+
+.hero { position:absolute; padding:0; margin:0; width:100%; height:100%; max-height:600px; overflow:hidden;
+    background: url("../img/sponsor-mainphoto.jpg") no-repeat center -250px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: initial;
+    }
+
+article.main { margin-top:300px; }
+
+article.main section:first-child img { margin-top:-50px; }
+
+article.main section { margin-top:2em; }
+article.main section:first-child { margin-top:0; }
+
+img.pull-left { margin-right:1em; }
+
+.how .col-sm-4 { padding:1em; border-radius:1em; }
+.how .col-sm-4:hover { background:#f0f0f8; transition: 200ms linear; }
+.how .headicon { text-align:center; }
+.how .headicon .fa { color:#8490a7; border:solid 4px #8490a7; border-radius:100%; padding:.3em; }
+.how .fa-paper-plane { padding:.35em .35em .25em .25em; }
+article.main .how img.pull-right { margin-top:1em; margin-bottom:-2em; }
+
+.digital { padding-top:1em; }
+.digital .fa { color:#8490a7; font-size:7em;}
+
+
+/***********************************************
+
+ Media: Y U SO QUERULOUS??
+
+***********************************************/
+@media only screen and (max-width : 768px) {
+    .digital .fa { display:block; float:none!important; text-align:center; }
+}
+@media only screen and (max-width : 1024px) {
+    article.main section:first-child img { max-width:200px; }
+}
