@@ -29,6 +29,7 @@ body { background:#253a63; font-size:16px; font-family: "Gill Sans MT", Calibri,
 
 h1 { font:normal 3em 'latoregular'; }
 h2, h3, h4, h5, h6 { font:normal 1.25em 'latoregular'; color:#253a63; }
+h2 { font-size:1.5em; }
 h4 { color:#8490a7; font-weight:bold; }
 h6 { color:#444; }
  
