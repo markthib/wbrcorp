@@ -62,9 +62,10 @@
 		#mobilenav img{margin:5px auto 0;}
 		
 		/* Events */
-		.content{padding:0 0 2em;margin:0;width:100%;height:100%;overflow:hidden;background:url("img/events-mainphoto3.jpg") no-repeat center center fixed; /*-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/events-mainphoto3.jpg',sizingMethod='scale');-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/events-mainphoto3.jpg',sizingMethod='scale')";background-attachment:initial;*/}
-		.hero h1{background:transparent;}
+		div.hero {position:fixed;z-index:0;top:80px;left:0;padding:0;margin:0;width:100%;height:100%;overflow:hidden;background:url("img/events-mainphoto3.jpg") no-repeat center center fixed; -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/events-mainphoto3.jpg',sizingMethod='scale');-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/events-mainphoto3.jpg',sizingMethod='scale')";background-attachment:initial;}
+		
 		article.main{background:transparent;min-height:600px;}
+		article.main .hero h1{background:transparent;}
 		/**** Event Filters ****/
 		.filters{background:rgba(255,255,255,0.8);padding-bottom:1em;margin:.5em 0;}
 		.filters button{display:block;background:none;border:none;color:#3b62b0;transition:100ms linear;outline:none;}
@@ -129,7 +130,6 @@
     <link href="css/wbr.css" rel="stylesheet">
 
     <link href="css/jquery.dataTables.min.css" rel="stylesheet">
-    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -179,11 +179,10 @@
     <div class="content events">
 
         <div class="hero">
-          <h1>WBR Events</h1>
-
         </div>
 		
         <article class="main">
+          <h1>WBR Events</h1>
 
           <div class="container">
 	
@@ -193,15 +192,12 @@
             <h2>Filter by Region</h2>
             <div class="row">
               <button class="btn-region col-xs-12 col-md-4" id="filter-americas" value="Americas" type="submit">
-                <i class="mg map-wrld-am"></i>
-                Americas
+                North America
               </button>
               <button class="btn-region col-xs-12 col-md-4" id="filter-europe" value="Europe" type="submit">
-                <i class="mg map-wrld-eu"></i>
                 Europe
               </button>
               <button class="btn-region col-xs-12 col-md-4" id="filter-asia" value="Asia" type="submit">
-                <i class="mg map-wrld-as"></i>
                 Asia
               </button>
             </div>
