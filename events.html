@@ -10,10 +10,125 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
+	<style>
+		
+		@font-face {
+		    font-family: 'latoregular';
+		    src: url('fonts/lato/lato-regular-webfont.eot');
+		    src: url('fonts/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+		         url('fonts/lato/lato-regular-webfont.woff') format('woff'),
+		         url('fonts/lato/lato-regular-webfont.ttf') format('truetype'),
+		         url('fonts/lato/lato-regular-webfont.svg#latoregular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		html { background:#253a63; }
+		body { background:#253a63; font-size:16px; font-family: "Gill Sans MT", Calibri, sans-serif;}
+		
+		/***********************************************
+		 	Urban Planning
+		***********************************************/
+		/* Global */
+		.topnav{overflow:hidden;padding:0 .5em;}
+		.topnav .social{float:right;margin-top:.5em;}
+		.topnav .social a{display:block;float:left;padding:5px;margin:5px 5px 0;}
+		.topnav a:hover{color:#f7c996;background:transparent;}
+		.mainnav{background:#3b62b0;font-size:1.2em;height:3.2em;position:relative;width:100%;z-index:9;}
+		.mainnav .navbar-nav{margin:0 auto;float:none;width:33em;}
+		.mainnav li{padding:0 .5em;}
+		.mainnav li a{padding:1em;}
+		.mainnav .navbar-brand{height:80px;padding:0;margin-top:-.8em;color:#fff;}
+		.mainnav .navbar-brand:hover{background:transparent;}
+				
+		.content{position:relative;overflow:hidden;padding:0;margin:0;width:100%;height:100%;background:transparent;font-size:1.2em;}
+		.hero h1{color:#fff;text-align:center;margin:0;padding:.8em 0;font-size:2.4em;text-shadow:0 0 0.5em rgba(0,0,0,1);background:rgba(0,0,0,0.4);}
+		article.main{background:#c8ced8;position:relative;padding-bottom:2em;}
+		.bg-alt{background:#e8e8ee;padding:1em auto;margin:2em auto;}
+		img.pull-left{margin-right:1em;}
+		footer p{padding:1em;font-size:.9em;}
+		footer img{height:42px;margin-top:5px;transition:200ms linear;opacity:.7;}
+		footer img:hover{opacity:1;}
+		nav.footernav{height:65px;background:#253a63;color:#fff;}
+		nav.footernav li a:hover{color:#f7c996;background:transparent;}
+		#desknav{position:relative;}
+		#desknav .footerimg{position:absolute;left:50%;display:block;top:0;padding:0;1em;}
+		#desknav li a{padding:1em .5em;}
+		#mobilenav ul{margin:0 auto;overflow:hidden;padding:.3em;}
+		#mobilenav li{text-align:center;width:18%;padding:0 1%;}
+		#mobilenav li a{padding:1em 0;}
+		#mobilenav .navbar-brand{padding:0;float:none;}
+		#mobilenav img{margin:5px auto 0;}
+		
+		/* Events */
+		.content{padding:0 0 2em;margin:0;width:100%;height:100%;overflow:hidden;background:url("img/events-mainphoto3.jpg") no-repeat center center fixed; /*-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/events-mainphoto3.jpg',sizingMethod='scale');-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/events-mainphoto3.jpg',sizingMethod='scale')";background-attachment:initial;*/}
+		.hero h1{background:transparent;}
+		article.main{background:transparent;min-height:600px;}
+		/**** Event Filters ****/
+		.filters{background:rgba(255,255,255,0.8);padding-bottom:1em;margin:.5em 0;}
+		.filters button{display:block;background:none;border:none;color:#3b62b0;transition:100ms linear;outline:none;}
+		.extras{clear:both;}
+		.regions h2{margin-bottom:1em;}
+		.regions button img{opacity:1; display:block;margin:0 auto;}
+		.regions button:hover {opacity:0.7;}
+		.industries button{text-align:left;margin-bottom:.1em;white-space:nowrap;}
+		.industries button i{width:1em;text-align:center;}
+		.industries button:hover,.industries button:focus{color:#f0942d;}
+		.btn-reset{display:block;clear:both;background-color:#3b62b0;color:#fff;padding:.8em 1em;margin:1em auto 0;border:0;position:absolute;border-top-left-radius:.5em;border-top-right-radius:.5em;z-index:9;transition:100ms linear;}
+		.btn-reset:hover{color:#f7c996;}
+		/**** Event Listings Table ****/
+		section.table-responsive{clear:both;border:0;}
+		#listings_wrapper{padding:1em 0;}
+		#listings_filter{background-color:#3b62b0;padding:.7em .5em 0;color:#fff;border-top-left-radius:.5em;border-top-right-radius:.5em;}
+		#listings_filter label input{color:#333;font-weight:normal;border-radius:0.4em;border:solid 3px #253a63;text-indent:5px;}
+		table#listings tbody tr{background:rgba(255,255,255,0.9)!important;}
+		table#listings tbody tr.even{background:rgba(245,245,245,0.9)!important;}
+		table#listings tbody tr:hover{background:rgba(235,235,235,0.9)!important;}
+		table#listings tbody td{background:transparent!important;height:4em;}
+		table#listings tbody td.logocol{background:#fff!important;}
+		table#listings thead{color:#fff;background:#3b62b0;white-space:nowrap;}
+		table#listings td.logocol{padding:1em;text-align:center;}
+		table#listings img.eventlogo{max-width:140px;max-height:140px;}
+		table#listings .infocol{position:relative;padding-right:200px;}
+		table#listings .eventname{font-size:1.2em;font-weight:bold;font-family:'latoregular';}
+		table#listings .btn-agenda,table#listings .btn-spex{margin-right:10px;display:block;position:absolute;right:0;top:1em;}
+		table#listings .btn-spex{top:4em;}
+		
+		/***********************************************
+			Media:Y U SO QUERULOUS??
+		***********************************************/
+		/* Global */
+		@media only screen and (max-width :768px){body{padding-bottom:4em;}
+		.mainnav{height:auto;}
+		.mainnav .navbar-nav{background:#3b62b0;}
+		footer img{opacity:1;}
+		footer .container{padding:0;}}
+		@media only screen and (max-width :500px){header .navbar-brand{text-align:center;width:100%;}
+		.topnav .social{clear:both;float:none;margin:0 0 1em;overflow:hidden;text-align:center;padding-left:33%;}
+		#mobilenav li{font-size:.85em;}}
+		@media only screen and (max-width :320px){header .navbar-brand{font-size:16px;font-weight:bold;}}
+		/* Events */
+		@media only screen and (max-width :992px){.filters{width:100%;}
+		.filters button{font-size:.8em;}
+		table#listings td.infocol{padding-right:100px;}}
+		@media only screen and (max-width :768px){.filters button{font-size:inherit;margin-top:.4em;}
+		.regions,.industries{border:0;text-align:center;}
+		.industries button{padding-left:10%;width:90%;white-space:normal;font-size:.9em;}
+		table#listings img.eventlogo{max-width:90px;max-height:90px;}
+		table#listings .eventname{font-size:1em;}
+		table#listings .venue{font-size:.8em;}
+		#listings_wrapper{padding-top:0;}
+		#listings_filter{border-radius:0;margin-top:0;width:100%;}
+		#listings_filter label{width:100%;text-align:center;}
+		#listings_filter label input{width:60%;}
+		.btn-reset{position:static;margin:0;width:100%;background:#253a63;border-radius:0;}}
+	</style>
+
+
     <link href="css/wbr.css" rel="stylesheet">
-    <link href="css/events.css" rel="stylesheet">
+
     <link href="css/jquery.dataTables.min.css" rel="stylesheet">
-    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -77,15 +192,15 @@
             <h2>Filter by Region</h2>
             <div class="row">
               <button class="btn-region col-xs-12 col-md-4" id="filter-americas" value="Americas" type="submit">
-                <i class="mg map-wrld-am"></i>
+				<img class="img-responsive" src="img/reg-northam.png">
                 North America
               </button>
               <button class="btn-region col-xs-12 col-md-4" id="filter-europe" value="Europe" type="submit">
-                <i class="mg map-wrld-eu"></i>
+				<img class="img-responsive" src="img/reg-eur.png">
                 Europe
               </button>
               <button class="btn-region col-xs-12 col-md-4" id="filter-asia" value="Asia" type="submit">
-                <i class="mg map-wrld-as"></i>
+				<img class="img-responsive" src="img/reg-apac.png">
                 Asia
               </button>
             </div>

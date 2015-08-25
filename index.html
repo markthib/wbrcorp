@@ -10,8 +10,133 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
+	<style>
+		
+		@font-face {
+		    font-family: 'latoregular';
+		    src: url('fonts/lato/lato-regular-webfont.eot');
+		    src: url('fonts/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+		         url('fonts/lato/lato-regular-webfont.woff') format('woff'),
+		         url('fonts/lato/lato-regular-webfont.ttf') format('truetype'),
+		         url('fonts/lato/lato-regular-webfont.svg#latoregular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		html { background:#253a63; }
+		body { background:#253a63; font-size:16px; font-family: "Gill Sans MT", Calibri, sans-serif;}
+		
+		/***********************************************
+		 	Urban Planning
+		***********************************************/
+		/* Global */
+		.topnav{overflow:hidden;padding:0 .5em;}
+		.topnav .social{float:right;margin-top:.5em;}
+		.topnav .social a{display:block;float:left;padding:5px;margin:5px 5px 0;}
+		.topnav a:hover{color:#f7c996;background:transparent;}
+		.mainnav{background:#3b62b0;font-size:1.2em;height:3.2em;position:relative;width:100%;z-index:9;}
+		.mainnav .navbar-nav{margin:0 auto;float:none;width:33em;}
+		.mainnav li{padding:0 .5em;}
+		.mainnav li a{padding:1em;}
+		.mainnav .navbar-brand{height:80px;padding:0;margin-top:-.8em;color:#fff;}
+		.mainnav .navbar-brand:hover{background:transparent;}
+				
+		.content{position:relative;overflow:hidden;padding:0;margin:0;width:100%;height:100%;background:transparent;font-size:1.2em;}
+		.hero h1{color:#fff;text-align:center;margin:0;padding:.8em 0;font-size:2.4em;text-shadow:0 0 0.5em rgba(0,0,0,1);background:rgba(0,0,0,0.4);}
+		article.main{background:#c8ced8;position:relative;padding-bottom:2em;}
+		.bg-alt{background:#e8e8ee;padding:1em auto;margin:2em auto;}
+		img.pull-left{margin-right:1em;}
+		footer p{padding:1em;font-size:.9em;}
+		footer img{height:42px;margin-top:5px;transition:200ms linear;opacity:.7;}
+		footer img:hover{opacity:1;}
+		nav.footernav{height:65px;background:#253a63;color:#fff;}
+		nav.footernav li a:hover{color:#f7c996;background:transparent;}
+		#desknav{position:relative;}
+		#desknav .footerimg{position:absolute;left:50%;display:block;top:0;padding:0;1em;}
+		#desknav li a{padding:1em .5em;}
+		#mobilenav ul{margin:0 auto;overflow:hidden;padding:.3em;}
+		#mobilenav li{text-align:center;width:18%;padding:0 1%;}
+		#mobilenav li a{padding:1em 0;}
+		#mobilenav .navbar-brand{padding:0;float:none;}
+		#mobilenav img{margin:5px auto 0;}
+		
+		/* Home */
+		.hero{position:absolute;padding:0;margin:0;width:100%;height:100%;max-height:600px;overflow:hidden;background:url("img/home-mainphoto.jpg") no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/home-mainphoto.jpg',sizingMethod='scale');-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/home-mainphoto.jpg',sizingMethod='scale')";background-attachment:initial;}
+		.hero h1{float:right;margin-right:2em;background:transparent;}
+		article.main{margin-top:400px;}
+		article.main h2,.btnrow{text-align:center;margin-bottom:1em;}
+		article.main section .btn-blue{margin:1em auto;width:80%;padding:1em;}
+		.colicon{margin:-25px auto 0;display:block;}
+		.homeabout{overflow:hidden;position:relative;padding:0;margin:0;height:343px;background:#000 url("img/home-aboutphoto.jpg") no-repeat top left;}
+		.homeabout .container{width:40%;text-align:center;margin-top:3em;position:absolute;right:15%;}
+		.homeabout .container h2{color:#fff;margin-bottom:1em;line-height:1.3em;}
+		.homequotes{background:#253a63;padding:1.5em 0;color:#fff;}
+		.homequotes .media{display:none;}
+		/* Hide initially for JS Randomizer */
+		.homequotes blockquote{border-color:#8490a7;}
+		.homequotes .media-body{padding:1em 0;max-width:80%;}
+		.homequotes .media img{max-width:120px;border:solid 4px #8490a7;-webkit-filter:grayscale(80%);filter:grayscale(80%);}
+		.homecontact{overflow:hidden;padding:0;margin:0;height:258px;background:#fff url("img/home-contact.jpg") no-repeat top right;}
+		.homecontact .container{width:40%;text-align:center;float:left;}
+		.homecontact h3{line-height:1.3em;}
+		.homecontact p{margin-bottom:.5em;}
+		
+		/***********************************************
+			Media:Y U SO QUERULOUS??
+		***********************************************/
+		/* Global */
+		@media only screen and (max-width :768px){body{padding-bottom:4em;}
+		.mainnav{height:auto;}
+		.mainnav .navbar-nav{background:#3b62b0;}
+		footer img{opacity:1;}
+		footer .container{padding:0;}}
+		@media only screen and (max-width :500px){header .navbar-brand{text-align:center;width:100%;}
+		.topnav .social{clear:both;float:none;margin:0 0 1em;overflow:hidden;text-align:center;padding-left:33%;}
+		#mobilenav li{font-size:.85em;}}
+		@media only screen and (max-width :320px){header .navbar-brand{font-size:16px;font-weight:bold;}}
+		/* Home */
+		@media only screen and (min-width :768px) and (max-width :1024px){article.main section .btn-blue{width:100%;}
+		img.colicon{margin:0 0 0 35%;}}
+		@media only screen and (max-width :768px){.hero h1{padding:0 1em;margin-top:1em;float:left;font-size:2em;}
+		article.main{margin-top:380px;}
+		article.main .btnrow{margin-bottom:0;}
+		.homequotes .media-body{max-width:70%;}
+		.footernav .navbar-right{padding-right:10px;}}
+		@media only screen and (max-width :670px){.hero{overflow:scroll;-webkit-overflow-scrolling:touch;}
+		.hero{background-position:70% top;}
+		.hero h1{font-size:1.8em;}
+		article.main section{margin-bottom:3em;}
+		article.main section:last-child{margin-bottom:0;}
+		.homeabout{background-position:-40px top;}
+		.homeabout .container{width:80%;text-align:right;margin-top:1em;right:0;bottom:0;background:rgba(0,0,0,0.3);padding-bottom:1em;}
+		.homecontact .container{margin-top:0;}}
+		@media only screen and (max-width :470px){.homequotes .media-body{max-width:95%;padding:0;}
+		.media-left{display:none;}
+		.hero{overflow:scroll;-webkit-overflow-scrolling:touch;}
+		.hero h1{font-size:2em;}
+		article.main section{border-bottom:solid 1px #aaa;padding-bottom:1em;}}
+		@media only screen and (min-width :320px) and (max-width :768px){img.colicon{margin-top:-2em;}
+		article.main p{clear:both;}}
+		@media only screen and (max-width :320px){.hero h1{font-size:1.5em;line-height:1.5em;margin-top:.7em;width:100%;text-align:center;}
+		.hero{background-position:right top;}
+		article.main section:last-child{margin-bottom:1em;}
+		article.main section h2{margin:.5em auto;}
+		article.main section .btn-blue{width:100%;}}
+		@media only screen and (max-height :640px){.hero{background-position:80% top;}}
+		/* Tricky Contact BG Image is Tricky */
+		@media only screen and (max-width :900px){.homecontact{background-image:none;}.homecontact .container{width:100%;}}
+		@media only screen and (min-width :1024px){.homecontact .container{width:40%;margin-top:.5em;}}
+		@media only screen and (min-width :1280px){.homecontact .container{width:50%;margin-top:1em;}}
+		@media only screen and (min-width :1360px){.homequotes .media img{max-width:160px;}
+		.homecontact .container{width:60%;margin-top:2.5em;}
+		.homecontact .container br{display:none;}
+		.homecontact p{margin-bottom:2em;}
+		}
+	</style>
+
+
     <link href="css/wbr.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
