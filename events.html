@@ -76,6 +76,7 @@
 		.industries button i{width:1em;text-align:center;}
 		.industries button:hover,.industries button:focus{color:#f0942d;}
 		.btn-reset{display:block;clear:both;background-color:#3b62b0;color:#fff;padding:.8em 1em;margin:1em auto 0;border:0;position:absolute;border-top-left-radius:.5em;border-top-right-radius:.5em;z-index:9;transition:100ms linear;}
+		.btn-connect span { font-family:Verdana,sans-serif; }
 		.btn-reset:hover{color:#f7c996;}
 		/**** Event Listings Table ****/
 		section.table-responsive{clear:both;border:0;}
@@ -94,6 +95,8 @@
 		table#listings .eventname{font-size:1.2em;font-weight:bold;font-family:'latoregular';}
 		table#listings .btn-agenda,table#listings .btn-spex{margin-right:10px;display:block;position:absolute;right:0;top:1em;}
 		table#listings .btn-spex{top:4em;}
+		
+		table#listings tbody td.datecol { font-size:0.9em; white-space:nowrap; }
 		
 		/***********************************************
 			Media:Y U SO QUERULOUS??
@@ -213,17 +216,18 @@
                 <button class="btn-industry" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
                 <button class="btn-industry" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
                 <button class="btn-industry" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
-                <button class="btn-industry" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
+                <button class="btn-industry" id="filter-finance" value="Finance" type="submit"><i class="fa fa-line-chart fa-lg"></i> Finance / Investment</button>                
+				<button class="btn-industry" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
                 <button class="btn-industry" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
-                <button class="btn-industry" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
+                <button class="btn-connect" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> <span>1-to-1</span> Networking</button>
               </div>
               <div class="col-xs-12 col-md-6">
+				<button class="btn-industry" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
                 <button class="btn-industry" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
                 <button class="btn-industry" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
                 <button class="btn-industry" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
                 <button class="btn-industry" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
                 <button class="btn-industry" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
-                <button class="btn-connect" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> 1-to-1 Networking</button>
               </div>
             </div>
 
@@ -256,7 +260,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://etaileast.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://etaileast.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/08/10</td>
+                      <td>11 - 13 September, 2015</td>
                       <td>Americas</td>
                       <td>eCommerce / Retail</td>
 					  <td>False</td>
@@ -270,7 +274,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://etailfrance.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://etailfrance.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/11/04</td>
+                      <td>5 - 7 February, 2015</td>
                       <td>Europe</td>
                       <td>eCommerce / Retail</td>
 					  <td>False</td>
@@ -284,7 +288,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://logipharmaeu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://logipharmaeu.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/08/15</td>
+                      <td>28 - 30 November, 2015</td>
                       <td>Europe</td>
                       <td>Procurement, Pharma / Biotech</td>
 					  <td>False</td>
@@ -298,7 +302,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://procureconindirecteu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://procureconindirecteu.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/05/21</td>
+                      <td>2015/05/21 - 2015/05/23</td>
                       <td>Europe</td>
                       <td>Procurement</td>
 					  <td>False</td>
@@ -312,7 +316,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://digitaltravel.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://digitaltravel.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/04/27</td>
+                      <td>2015/04/27 - 2015/04/29</td>
                       <td>Americas</td>
                       <td>eCommerce / Retail</td>
 					  <td>False</td>
@@ -326,7 +330,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://procureconasia.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://procureconasia.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/06/23</td>
+                      <td>2015/06/23 - 2015/06/25</td>
                       <td>Asia</td>
                       <td>Procurement</td>
 					  <td>False</td>
@@ -340,7 +344,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://procureconwest.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://procureconwest.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/09/28</td>
+                      <td>2015/09/28 - 2015/09/30</td>
                       <td>Americas</td>
                       <td>Procurement</td>
 					  <td>False</td>
@@ -354,7 +358,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://bionetwork.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://bionetwork.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/10/26</td>
+                      <td>2015/10/26 - 2015/10/28</td>
                       <td>Americas</td>
                       <td>Pharma / Biotech, Healthcare</td>
 					  <td>False</td>
@@ -368,7 +372,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://logipharmaus.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://logipharmaus.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/09/28</td>
+                      <td>15 - 18 December, 2015</td>
                       <td>Americas</td>
                       <td>Pharma / Biotech, Supply Chain</td>
 					  <td>False</td>
@@ -382,7 +386,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://fieldserviceusa.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://fieldserviceusa.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/04/20</td>
+                      <td>2015/04/20 - 2015/04/20</td>
                       <td>Americas</td>
                       <td>Service / Support</td>
 					  <td>False</td>
@@ -396,7 +400,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://fieldserviceeast.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://fieldserviceeast.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/09/15</td>
+                      <td>30 - 31 November, 2015</td>
                       <td>Americas</td>
                       <td>Service / Support</td>
 					  <td>False</td>
@@ -410,7 +414,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://fieldservicemd.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://fieldservicemd.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2016/02/22</td>
+                      <td>28 - 30 May, 2015</td>
                       <td>Americas</td>
                       <td>Service / Support, Healthcare</td>
 					  <td>False</td>
@@ -424,7 +428,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://fieldservicemdeu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://fieldservicemdeu.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/03/23</td>
+                      <td>27 - 29 January, 2015</td>
                       <td>Europe</td>
                       <td>Service / Support, Healthcare</td>
 					  <td>False</td>
@@ -438,7 +442,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://fieldserviceeu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://fieldserviceeu.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/10/19</td>
+                      <td>25 - 27 February, 2015</td>
                       <td>Europe</td>
                       <td>Service / Support</td>
 					  <td>False</td>
@@ -452,7 +456,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://mobileshoppingconnect.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://mobileshoppingconnect.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/06/22</td>
+                      <td>2015/06/22 - 2015/06/24</td>
                       <td>Americas</td>
                       <td>eCommerce / Retail</td>
 					  <td>True</td>
@@ -466,7 +470,7 @@
                         <a class="btn btn-dk btn-sm btn-spex hidden-sm hidden-xs" href="http://etailconnecteu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                         <a class="btn btn-dk btn-sm btn-spex hidden-md hidden-lg" href="http://etailconnecteu.wbresearch.com/opportunities" target="_blank" aria-hidden="true">Sponsor</a>
                       </td>
-                      <td>2015/09/08</td>
+                      <td>2015/09/08 - 2015/09/09</td>
                       <td>Europe</td>
                       <td>eCommerce / Retail</td>
 					  <td>True</td>
